@@ -144,7 +144,7 @@ MonoBehaviour:
   - {fileID: 1891180745220368, guid: 9f46c6ffb1aaf144c98935609cca559f, type: 2}
   - {fileID: 1428515602709856, guid: 6e00031379dcfbc4cb653d0bc12eb551, type: 2}
   - {fileID: 1538382250918274, guid: b46bb03facc4f024e92a65c5959f69b9, type: 2}
-  time: 0.1
+  time: 1
   Gpos:
   - {x: -405, y: 1000}
   - {x: -135, y: 1000}
