@@ -45,6 +45,7 @@ public class Player : MonoBehaviour {
     }
 
     public void Gamu() {
+        print("a");
         gamuflag = true;
         bakutikuflag = false;
     }
