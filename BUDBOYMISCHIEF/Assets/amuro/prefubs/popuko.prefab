@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4069048909732408}
   - component: {fileID: 212316415550779804}
   - component: {fileID: 50685333964025872}
+  - component: {fileID: 114516799301249958}
   m_Layer: 0
   m_Name: popuko
   m_TagString: Untagged
@@ -55,12 +56,24 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 200
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &114516799301249958
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1538382250918274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2ac34fc854495c45bde09cee04e1cc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj: {fileID: 1538382250918274}
 --- !u!212 &212316415550779804
 SpriteRenderer:
   m_ObjectHideFlags: 1
