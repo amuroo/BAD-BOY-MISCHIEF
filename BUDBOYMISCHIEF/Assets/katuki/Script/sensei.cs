@@ -90,8 +90,28 @@ public class sensei : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        senseiX = transform.position.x;
-        
+        if (other.gameObject.tag == "kane")
+        {
+            senseiX = transform.position.x;
+            kaneX = other.gameObject.transform.position.x;
+            if (kaneX == senseiX)
+            {
+                X = 0;
+            }
+            else if (kaneX > senseiX)
+            {
+                X = 5;
+            }
+            else if (kaneX < senseiX)
+            {
+                X = -5;
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        X = 0;
     }
 }
 
