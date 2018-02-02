@@ -19,6 +19,7 @@ public class ScoreManager : MonoBehaviour {
     public void AddScore(int amount)
     {
      score += amount;
+     Score.text = "スコア : " + score;
     }
 	
 	// Update is called once per frame
