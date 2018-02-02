@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/katuki/Scene/stage slect.unity
+    guid: c36fb5865925a6748ba9fc72b40bd4c5
+  - enabled: 1
+    path: Assets/katuki/Scene/testStage1.unity
+    guid: 047e18a5efe54e440864b5bd2c4b6053

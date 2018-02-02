@@ -4,31 +4,26 @@ using UnityEngine;
 
 public class sensei : MonoBehaviour
 {
-    public float x = 1;
-    private float time;
-    //private Rigidbody2D rb2d;
+    public float speed = 1;
+    private float time;//スタン時、撃破時の処理用
     private bool stan = false;
     private float xx;
     private bool baku = false;
     private Animator anim;
     private float X = 0;
-    private float senseiX;
-    private float kaneX;
-    private Rigidbody2D rb2d;
+    private float senseiX;//先生の位置
+    private float kaneX;//お金の位置
     private bool Dog = false;
-    // Use this for initialization
+    public bool scientist = false;//理科の先生用
     void Start()
     {
-        xx = x;
+        xx = speed;
         anim = GetComponent<Animator>();
-        rb2d = GetComponent<Rigidbody2D>();
 
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //Debug.Log(X);
         transform.Translate(new Vector2(X, xx * -10));
         if (stan || baku)
         {
@@ -37,7 +32,7 @@ public class sensei : MonoBehaviour
             if (stan && time >= 3)
             {
                 stan = false;
-                xx = x;
+                xx = speed;
                 anim.SetBool("break", false);
             }
             else if (baku && time >= 1)
@@ -45,16 +40,19 @@ public class sensei : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+        if(transform.position.y >= 1500 || transform.position.y <= -1500)
+        {
+            Destroy(gameObject);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        print("A"); if (other.gameObject.tag == "Bakuchiku")
+        if (other.gameObject.tag == "Bakuchiku")
         {
             xx = 0;
             anim.SetBool("break", true);
             baku = true;
-            //Destroy(gameObject);
         }
         else if (other.gameObject.tag == "Gamu")
         {
@@ -65,41 +63,21 @@ public class sensei : MonoBehaviour
         }
         else if (other.gameObject.tag == "Dog")
         {
+            if (scientist) return;
             Dog = true;
             anim.SetBool("nige", true);
-            xx = -1.5f;
+            xx = speed * -1 * 1.5f;
         }
-        /*else if (other.gameObject.tag == "kane")
-        {
-            kaneX = other.gameObject.transform.position.x;
-            senseiX = transform.position.x;
-            Debug.Log(kaneX);
-            if (kaneX > senseiX + 1)
-            {
-                while (kaneX != senseiX)
-                {
-                    X = 5;
-                }
-                X = 0;
-            }
-            else if (kaneX < senseiX - 1)
-            {
-                while (kaneX != senseiX)
-                {
-                    X = -5;
-                }
-                X = 0;
-            }
-        }*/
+
     }
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.tag == "kane")
+        if (other.gameObject.tag == "kane") //お金に引き寄せられる処理
         {
             if (stan || baku || Dog) return;
-            senseiX = transform.position.x;
-            kaneX = other.gameObject.transform.position.x;
+            senseiX = transform.position.x;//位置を取得
+            kaneX = other.gameObject.transform.position.x;//
             if (kaneX == senseiX)
             {
                 X = 0;
@@ -117,7 +95,7 @@ public class sensei : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        X = 0;
+        X = 0;//x座標固定
     }
 }
 
