@@ -14,11 +14,14 @@ public class sensei : MonoBehaviour
     private float X = 0;
     private float senseiX;
     private float kaneX;
+    private Rigidbody2D rb2d;
+    private bool Dog = false;
     // Use this for initialization
     void Start()
     {
         xx = x;
         anim = GetComponent<Animator>();
+        rb2d = GetComponent<Rigidbody2D>();
 
     }
 
@@ -30,6 +33,7 @@ public class sensei : MonoBehaviour
         if (stan || baku)
         {
             time += Time.deltaTime;
+            X = 0;
             if (stan && time >= 3)
             {
                 stan = false;
@@ -61,6 +65,7 @@ public class sensei : MonoBehaviour
         }
         else if (other.gameObject.tag == "Dog")
         {
+            Dog = true;
             anim.SetBool("nige", true);
             xx = -1.5f;
         }
@@ -92,6 +97,7 @@ public class sensei : MonoBehaviour
     {
         if (other.gameObject.tag == "kane")
         {
+            if (stan || baku || Dog) return;
             senseiX = transform.position.x;
             kaneX = other.gameObject.transform.position.x;
             if (kaneX == senseiX)
