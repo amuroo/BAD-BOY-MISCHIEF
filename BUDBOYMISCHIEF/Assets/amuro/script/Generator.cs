@@ -6,6 +6,10 @@ public class Generator : MonoBehaviour {
 
     public GameObject[] enemy;
     public float time;
+    public bool plus = false;
+    float count;
+    float interval;
+
 
     //湧きポジの指定
     public Vector2[] Gpos = { new Vector2(-405, 1000), new Vector2(-135, 1000),
@@ -15,6 +19,7 @@ public class Generator : MonoBehaviour {
     void Start()
     {
         StartCoroutine("Generate");
+        plus = true;
     }
 
     IEnumerator Generate()
@@ -30,7 +35,22 @@ public class Generator : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        count += Time.deltaTime;
+        interval += Time.deltaTime;
 
+        if (plus)
+        {
+            time -= (interval /= 30);
+        }
+
+        if(count > 60f)
+        {
+            StopCoroutine("Generate");
+            plus = false;
+        }
+
+        // Debug.Log(time);
+        Debug.Log(count);
 
     }
 }
