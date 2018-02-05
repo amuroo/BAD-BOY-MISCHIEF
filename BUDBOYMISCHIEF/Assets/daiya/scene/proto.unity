@@ -615,6 +615,7 @@ MonoBehaviour:
   - {fileID: 1334130794391406, guid: cf873bf22d321ce49a16cf0626a83f41, type: 2}
   time: 2
   plus: 0
+  div: 0
   Gpos:
   - {x: -405, y: 1000}
   - {x: -135, y: 1000}
