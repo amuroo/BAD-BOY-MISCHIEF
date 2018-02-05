@@ -9,6 +9,7 @@ public class Generator : MonoBehaviour {
     public bool plus = false;
     float count;
     float interval;
+    public float div;
 
 
     //湧きポジの指定
@@ -40,7 +41,7 @@ public class Generator : MonoBehaviour {
 
         if (plus)
         {
-            time -= (interval /= 30);
+            time -= (interval /= div);
         }
 
         if(count > 60f)
