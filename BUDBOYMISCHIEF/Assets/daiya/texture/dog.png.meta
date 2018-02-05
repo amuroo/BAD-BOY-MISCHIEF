@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 10a9c2086e6c6b649a5bd06ad1041482
-timeCreated: 1517298379
+guid: a180fa37c75d5da43ba3f174cb480016
+timeCreated: 1517532376
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -31,12 +31,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -1
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -79,12 +79,12 @@ TextureImporter:
   - buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 53
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     androidETC2FallbackOverride: 0
   - buildTarget: Android
     maxTextureSize: 2048

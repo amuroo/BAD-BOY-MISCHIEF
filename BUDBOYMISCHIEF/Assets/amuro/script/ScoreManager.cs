@@ -4,15 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour {
-    static int score;
-    private Text Score;
+    /*public static int score;
+    private Text scoreText;
 
 
 
     // Use this for initialization
     void Start() {
-        Score = this.gameObject.GetComponent<Text>();
-        Score.text = "スコア : " + score;
+        scoreText = this.gameObject.GetComponent<Text>();
+        scoreText.text =  score;
         score = 0;
     }
 
@@ -25,5 +25,5 @@ public class ScoreManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-	}
+	}*/
 }
