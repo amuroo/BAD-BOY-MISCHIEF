@@ -15,15 +15,26 @@ public class sensei : MonoBehaviour
     private float kaneX;//お金の位置
     private bool Dog = false;
     public bool scientist = false;//理科の先生用
+    //public bool kyoutou = false;//教頭用
+    Player playersc;
     void Start()
     {
         xx = speed;
         anim = GetComponent<Animator>();
+        playersc = GameObject.FindWithTag("Player").GetComponent<Player>();
 
     }
 
     void Update()
     {
+        if (transform.position.y == -900 && this.gameObject.tag == "kyoutou")
+        {
+            playersc.gamutime += 1;
+            playersc.cointime += 1;
+            playersc.dogtime += 1;
+            playersc.bakutikutime += 1;
+            Debug.Log("recast");
+        }
         transform.Translate(new Vector2(X, xx * -10));
         if (stan || baku)
         {

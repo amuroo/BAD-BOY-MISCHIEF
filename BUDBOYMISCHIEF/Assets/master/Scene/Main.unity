@@ -416,15 +416,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy:
-  - {fileID: 1368768731326598, guid: ff81085cc4630e549b364dbee14ca004, type: 2}
-  - {fileID: 1073854779284400, guid: 207c01b0b614b424ea565454fd5b0892, type: 2}
+  - {fileID: 1365665193796622, guid: 7df89500686bfb843ac17056bae7fce2, type: 2}
+  - {fileID: 1365665193796622, guid: 7df89500686bfb843ac17056bae7fce2, type: 2}
   - {fileID: 1163522074328914, guid: 74c668dbd0d5d7f40ac08af5f5544fe0, type: 2}
   - {fileID: 1365665193796622, guid: 7df89500686bfb843ac17056bae7fce2, type: 2}
   - {fileID: 1253952046219830, guid: 249645bfe0729bb4c97923c228d6502a, type: 2}
   time: 5
   plus: 0
   div: 24
-  par: 2d00000046000000500000005a00000064000000
+  par: 4600000064000000
   Gpos:
   - {x: -405, y: 1200}
   - {x: -135, y: 1200}
@@ -972,7 +972,7 @@ GameObject:
   - component: {fileID: 1505256021}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
