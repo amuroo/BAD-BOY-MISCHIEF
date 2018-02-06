@@ -10,6 +10,8 @@ public class Generator : MonoBehaviour {
     float count;
     float interval;
     public float div;
+    private int randomNum;
+    public int[] par;
 
 
     //湧きポジの指定
@@ -28,8 +30,25 @@ public class Generator : MonoBehaviour {
         while (true)
         {
             //配列の中からランダムで生成
+            randomNum = Random.Range(0,100);
             GameObject element = enemy[Random.Range(0, enemy.Length)];
-            Instantiate(element, Gpos[Random.Range(0, Gpos.Length)], Quaternion.identity);
+            if (randomNum <= par[0])
+            {
+                Instantiate(enemy[0], Gpos[Random.Range(0, Gpos.Length)], Quaternion.identity);
+            } else if((randomNum > par[0]) && (randomNum <= par[1]))
+            {
+                Instantiate(enemy[1], Gpos[Random.Range(0, Gpos.Length)], Quaternion.identity);
+            } else if((randomNum > par[1]) && (randomNum <= par[2]))
+            {
+                Instantiate(enemy[2], Gpos[Random.Range(0, Gpos.Length)], Quaternion.identity);
+            } else if((randomNum > par[2]) && (randomNum <= par[3]))
+            {
+                Instantiate(enemy[3], Gpos[Random.Range(0, Gpos.Length)], Quaternion.identity);
+            } else if((randomNum > par[3]) && (randomNum <= par[4]))
+            {
+                Instantiate(enemy[4], Gpos[Random.Range(0, Gpos.Length)], Quaternion.identity);
+            }
+
             yield return new WaitForSecondsRealtime(time);
         }
     }
@@ -52,6 +71,7 @@ public class Generator : MonoBehaviour {
 
         // Debug.Log(time);
         Debug.Log(count);
+        Debug.Log(randomNum);
 
     }
 }
