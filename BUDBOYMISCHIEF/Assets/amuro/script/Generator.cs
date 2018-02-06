@@ -30,7 +30,7 @@ public class Generator : MonoBehaviour {
         while (true)
         {
             //配列の中からランダムで生成
-            randomNum = Random.Range(0,100);
+            randomNum = Random.Range(1,101);
             GameObject element = enemy[Random.Range(0, enemy.Length)];
             if (randomNum <= par[0])
             {
