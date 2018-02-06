@@ -14,7 +14,6 @@ public class sensei : MonoBehaviour
     private float senseiX;//先生の位置
     private float kaneX;//お金の位置
     private bool Dog = false;
-    public bool scientist = false;//理科の先生用
     Player playersc;
     private int recastRan = 0;
     void Start()
@@ -102,10 +101,6 @@ public class sensei : MonoBehaviour
 
     }
 
-    public void RestartScientist()
-    {
-        xx = speed;
-    }
 
     void OnTriggerStay2D(Collider2D other)
     {
