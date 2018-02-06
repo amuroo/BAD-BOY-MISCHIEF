@@ -14,14 +14,23 @@ public class sensei : MonoBehaviour
     private float senseiX;//先生の位置
     private float kaneX;//お金の位置
     private bool Dog = false;
-    public bool scientist = false;//理科の先生用
     Player playersc;
     private int recastRan = 0;
+
+    public int teacherscore;
+    public int ptteacherrscore;
+    public int scienceTeacherscore;
+    public int kyoutouscore;
+    public int headteacherscore;
+
+    GameDirector gamedirectorsc;
+
     void Start()
     {
         xx = speed;
         anim = GetComponent<Animator>();
         playersc = GameObject.FindWithTag("Player").GetComponent<Player>();
+        gamedirectorsc = GameObject.FindWithTag("GameDirector").GetComponent<GameDirector>();
 
     }
 
@@ -66,7 +75,26 @@ public class sensei : MonoBehaviour
             }
             else if (baku && time >= 1)
             {
+                if (this.gameObject.tag == "Teacher") {
+                    gamedirectorsc.AddScore(teacherscore);
+                }
+
+                else if (this.gameObject.tag == "PTTeacher") {
+                    gamedirectorsc.AddScore(ptteacherrscore);
+                }
+
+                else if (this.gameObject.tag == "ScienceTeacher") {
+                    gamedirectorsc.AddScore(scienceTeacherscore);
+                }
+
+                else if (this.gameObject.tag == "kyoutou") {
+                    gamedirectorsc.AddScore(kyoutouscore);
+                }
+                else if (this.gameObject.tag == "HeadTeacher") {
+                    gamedirectorsc.AddScore(headteacherscore);
+                }
                 Destroy(gameObject);
+
             }
         }
         if(transform.position.y >= 1500 || transform.position.y <= -1500)
@@ -102,10 +130,6 @@ public class sensei : MonoBehaviour
 
     }
 
-    public void RestartScientist()
-    {
-        xx = speed;
-    }
 
     void OnTriggerStay2D(Collider2D other)
     {
