@@ -87,11 +87,11 @@ public class Generator : MonoBehaviour {
             time -= (interval /= div);
         }
 
-        /*if(count > 60f)
+        if(count > 60f)
         {
             StopCoroutine("Generate");
             plus = false;
-        }*/
+        }
 
         // Debug.Log(time);
         //Debug.Log(count);

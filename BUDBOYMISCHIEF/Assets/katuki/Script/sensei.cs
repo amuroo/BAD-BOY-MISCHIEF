@@ -7,7 +7,7 @@ public class sensei : MonoBehaviour
     public float speed = 1;
     private float time;//スタン時、撃破時の処理用
     private bool stan = false;
-    private float xx;
+    public float xx;
     private bool baku = false;
     private Animator anim;
     private float X = 0;
@@ -15,8 +15,8 @@ public class sensei : MonoBehaviour
     private float kaneX;//お金の位置
     private bool Dog = false;
     public bool scientist = false;//理科の先生用
-    //public bool kyoutou = false;//教頭用
     Player playersc;
+    private int recastRan = 0;
     void Start()
     {
         xx = speed;
@@ -27,16 +27,34 @@ public class sensei : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.y == -900 && this.gameObject.tag == "kyoutou")
+        if (transform.position.y == -900 /*&& this.gameObject.tag == "kyoutou"*/)
         {
-            playersc.gamutime += 1;
-            playersc.cointime += 1;
-            playersc.dogtime += 1;
-            playersc.bakutikutime += 1;
-            Debug.Log("recast");
+            recastRan = Random.Range(0, 4);
+            if (recastRan == 0)
+            {
+                playersc.gamutime += 1;
+                Debug.Log("recastGAMU");
+            }
+            else if (recastRan == 1)
+            {
+                playersc.cointime += 1;
+                Debug.Log("recastCOIN");
+            }
+            else if (recastRan == 2)
+            {
+                playersc.dogtime += 1;
+                Debug.Log("recastDOG");
+
+            }
+            else if (recastRan == 3)
+            {
+                playersc.bakutikutime += 1;
+                Debug.Log("recastBAKUTIKU");
+
+            }
         }
         transform.Translate(new Vector2(X, xx * -10));
-        if (stan || baku)
+        if (stan || baku )
         {
             time += Time.deltaTime;
             X = 0;
@@ -72,14 +90,21 @@ public class sensei : MonoBehaviour
             stan = true;
             anim.SetBool("break", true);
         }
-        else if (other.gameObject.tag == "Dog")
+        else if (other.gameObject.tag == "Dog" && this.gameObject.tag != "scientist")
         {
-            if (scientist) return;
             Dog = true;
             anim.SetBool("nige", true);
             xx = speed * -1 * 1.5f;
+        }else if (other.gameObject.tag == "Dog" && this.gameObject.tag == "scientist")
+        {
+            xx = 0;
         }
 
+    }
+
+    public void RestartScientist()
+    {
+        xx = speed;
     }
 
     void OnTriggerStay2D(Collider2D other)

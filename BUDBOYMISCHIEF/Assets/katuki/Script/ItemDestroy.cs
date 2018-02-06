@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class senseiDestroy : MonoBehaviour {
+public class ItemDestroy : MonoBehaviour {
     public bool count = false;
     private float time;
     public float death;
