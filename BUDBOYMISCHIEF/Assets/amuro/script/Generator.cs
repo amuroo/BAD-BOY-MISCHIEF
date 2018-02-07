@@ -12,6 +12,7 @@ public class Generator : MonoBehaviour {
     public float div;
     private int randomNum;
     public int[] par;
+    public int endtime;
 
     /*public int e0;
     public int e1;
@@ -87,7 +88,7 @@ public class Generator : MonoBehaviour {
             time -= (interval /= div);
         }
 
-        if(count > 60f)
+        if(count > endtime)
         {
             StopCoroutine("Generate");
             plus = false;
