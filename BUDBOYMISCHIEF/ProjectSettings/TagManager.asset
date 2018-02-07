@@ -8,7 +8,12 @@ TagManager:
   - Gamu
   - Dog
   - kane
-  - scientist
+  - GameDirector
+  - Teacher
+  - PTTeacher
+  - HeadTeacher
+  - ScienceTeacher
+  - Undefined
   - kyoutou
   layers:
   - Default
