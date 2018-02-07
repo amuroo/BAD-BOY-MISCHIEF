@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114068113359460668}
   - component: {fileID: 95350176409830142}
   - component: {fileID: 50580132128037788}
+  - component: {fileID: 82920229076709386}
   m_Layer: 0
   m_Name: Teacher
   m_TagString: Teacher
@@ -89,6 +90,86 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 250, y: 250}
   m_EdgeRadius: 0
+--- !u!82 &82920229076709386
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1368768731326598}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95350176409830142
 Animator:
   serializedVersion: 3
@@ -119,6 +200,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   xx: 0
+  Damege: {fileID: 8300000, guid: 9246082d25942264f9c552c02e3d2e63, type: 3}
+  Gamu: {fileID: 8300000, guid: da94371cd9db9694895af64d2c606170, type: 3}
+  Won: {fileID: 8300000, guid: 218407fc685f22d4e9dd2648f978c98c, type: 3}
+  Money: {fileID: 8300000, guid: 15181689aee2b7f4cb16c4700ce6b3fa, type: 3}
   teacherscore: 0
   ptteacherrscore: 0
   scienceTeacherscore: 0

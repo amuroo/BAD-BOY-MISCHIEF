@@ -14,6 +14,10 @@ public class sensei : MonoBehaviour
     private float senseiX;//先生の位置
     private float kaneX;//お金の位置
     private bool Dog = false;
+    public AudioClip Damege;
+    public AudioClip Gamu;
+    public AudioClip Won;
+    public AudioClip Money;
     Player playersc;
     private int recastRan = 0;
 
@@ -107,12 +111,14 @@ public class sensei : MonoBehaviour
     {
         if (other.gameObject.tag == "Bakuchiku")
         {
+            GetComponent<AudioSource>().PlayOneShot(Damege);
             xx = 0;
             anim.SetBool("break", true);
             baku = true;
         }
         else if (other.gameObject.tag == "Gamu")
         {
+            GetComponent<AudioSource>().PlayOneShot(Gamu);
             time = 0;
             xx = 0;
             stan = true;
@@ -120,6 +126,7 @@ public class sensei : MonoBehaviour
         }
         else if (other.gameObject.tag == "Dog" && this.gameObject.tag != "scientist")
         {
+            GetComponent<AudioSource>().PlayOneShot(Won);
             Dog = true;
             anim.SetBool("nige", true);
             xx = speed * -1 * 1.5f;
@@ -136,6 +143,7 @@ public class sensei : MonoBehaviour
         if (other.gameObject.tag == "kane") //お金に引き寄せられる処理
         {
             if (stan || baku || Dog) return;
+            GetComponent<AudioSource>().PlayOneShot(Money);
             senseiX = transform.position.x;//位置を取得
             kaneX = other.gameObject.transform.position.x;//
             if (kaneX == senseiX)
