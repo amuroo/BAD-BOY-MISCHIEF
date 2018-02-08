@@ -6,10 +6,13 @@ public class ItemDestroy : MonoBehaviour {
     public bool count = false;
     private float time;
     public float death;
+    public AudioClip haiti;
 	// Use this for initialization
 	void Start () {
-		
-	}
+        gameObject.AddComponent<AudioSource>();
+        GetComponent<AudioSource>().PlayOneShot(haiti);
+
+    }
 	
 	// Update is called once per frame
 	void Update () {

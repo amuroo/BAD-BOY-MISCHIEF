@@ -29,6 +29,7 @@ public class sensei : MonoBehaviour
 
     void Start()
     {
+        gameObject.AddComponent<AudioSource>();
         xx = speed;
         anim = GetComponent<Animator>();
         playersc = GameObject.FindWithTag("Player").GetComponent<Player>();
