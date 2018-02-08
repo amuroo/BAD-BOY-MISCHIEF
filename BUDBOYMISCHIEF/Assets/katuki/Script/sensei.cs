@@ -111,9 +111,9 @@ public class sensei : MonoBehaviour
         if (other.gameObject.tag == "Bakuchiku")
         {
             GetComponent<AudioSource>().PlayOneShot(Damage);
-            xx = 0;
-            anim.SetBool("break", true);
-            baku = true;
+            xx = -speed * 1.5f;
+            anim.SetBool("nige", true);
+            Scorejudge();
         }
         else if (other.gameObject.tag == "Gamu")
         {
@@ -129,11 +129,40 @@ public class sensei : MonoBehaviour
             GetComponent<AudioSource>().PlayOneShot(dog);
             anim.SetBool("nige", true);
             xx = speed * -1 * 1.5f;
+            Scorejudge();
         }else if (other.gameObject.tag == "Dog" && this.gameObject.tag == "scientist")
         {
             xx = 0;
         }
 
+    }
+
+    void Scorejudge()
+    {
+        if (this.gameObject.tag == "Teacher")
+        {
+            gamedirectorsc.AddScore(teacherscore);
+        }
+
+        else if (this.gameObject.tag == "PTTeacher")
+        {
+            gamedirectorsc.AddScore(ptteacherrscore);
+        }
+
+        else if (this.gameObject.tag == "ScienceTeacher")
+        {
+            gamedirectorsc.AddScore(scienceTeacherscore);
+        }
+
+        else if (this.gameObject.tag == "kyoutou")
+        {
+            gamedirectorsc.AddScore(kyoutouscore);
+        }
+        else if (this.gameObject.tag == "HeadTeacher")
+        {
+            gamedirectorsc.AddScore(headteacherscore);
+        }
+        Debug.Log("PPPP");
     }
 
 

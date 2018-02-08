@@ -416,15 +416,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1342980951003624, guid: ff81085cc4630e549b364dbee14ca004, type: 2}
+  - {fileID: 1948324033889986, guid: 74c668dbd0d5d7f40ac08af5f5544fe0, type: 2}
   time: 4
   plus: 0
   div: 18
-  par: 1e000000370000004b0000005a00000064000000
+  par: 3c00000064000000
   Gpos:
   - {x: -405, y: 1200}
   - {x: -135, y: 1200}
