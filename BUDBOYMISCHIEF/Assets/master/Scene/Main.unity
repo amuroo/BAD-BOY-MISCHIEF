@@ -388,48 +388,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 102259747}
---- !u!1001 &321584509
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4165020880077330, guid: 249645bfe0729bb4c97923c228d6502a, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4165020880077330, guid: 249645bfe0729bb4c97923c228d6502a, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4165020880077330, guid: 249645bfe0729bb4c97923c228d6502a, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4165020880077330, guid: 249645bfe0729bb4c97923c228d6502a, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4165020880077330, guid: 249645bfe0729bb4c97923c228d6502a, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4165020880077330, guid: 249645bfe0729bb4c97923c228d6502a, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4165020880077330, guid: 249645bfe0729bb4c97923c228d6502a, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4165020880077330, guid: 249645bfe0729bb4c97923c228d6502a, type: 2}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 249645bfe0729bb4c97923c228d6502a, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &508589923
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,15 +416,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy:
-  - {fileID: 1368768731326598, guid: ff81085cc4630e549b364dbee14ca004, type: 2}
-  - {fileID: 1073854779284400, guid: 207c01b0b614b424ea565454fd5b0892, type: 2}
-  - {fileID: 1163522074328914, guid: 74c668dbd0d5d7f40ac08af5f5544fe0, type: 2}
-  - {fileID: 1365665193796622, guid: 7df89500686bfb843ac17056bae7fce2, type: 2}
-  - {fileID: 1253952046219830, guid: 249645bfe0729bb4c97923c228d6502a, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   time: 4
   plus: 0
   div: 18
   par: 1e000000370000004b0000005a00000064000000
+  endtime: 0
   Gpos:
   - {x: -405, y: 1200}
   - {x: -135, y: 1200}
