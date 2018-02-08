@@ -16,7 +16,9 @@ public class sensei : MonoBehaviour
     private bool Dog = false;
     Player playersc;
     private int recastRan = 0;
-
+    public AudioClip Damage;
+    public AudioClip Gamu;
+    public AudioClip dog;
     public int teacherscore;
     public int ptteacherrscore;
     public int scienceTeacherscore;
@@ -107,12 +109,14 @@ public class sensei : MonoBehaviour
     {
         if (other.gameObject.tag == "Bakuchiku")
         {
+            GetComponent<AudioSource>().PlayOneShot(Damage);
             xx = 0;
             anim.SetBool("break", true);
             baku = true;
         }
         else if (other.gameObject.tag == "Gamu")
         {
+            GetComponent<AudioSource>().PlayOneShot(Gamu);
             time = 0;
             xx = 0;
             stan = true;
@@ -121,6 +125,7 @@ public class sensei : MonoBehaviour
         else if (other.gameObject.tag == "Dog" && this.gameObject.tag != "scientist")
         {
             Dog = true;
+            GetComponent<AudioSource>().PlayOneShot(dog);
             anim.SetBool("nige", true);
             xx = speed * -1 * 1.5f;
         }else if (other.gameObject.tag == "Dog" && this.gameObject.tag == "scientist")
