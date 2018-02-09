@@ -25,6 +25,13 @@ public class sensei : MonoBehaviour
     public int kyoutouscore;
     public int headteacherscore;
 
+    public static int TeacherD;
+    public static int PTTeacherD;
+    public static int ScienceTeacherD;
+    public static int kyoutouD;
+    public static int HeadTeacherD;
+
+    public static int In;
     GameDirector gamedirectorsc;
 
     void Start()
@@ -102,6 +109,7 @@ public class sensei : MonoBehaviour
         }
         if(transform.position.y >= 1500 || transform.position.y <= -1500)
         {
+            In += 1;
             Destroy(gameObject);
         }
     }
@@ -141,25 +149,30 @@ public class sensei : MonoBehaviour
     {
         if (this.gameObject.tag == "Teacher")
         {
+            TeacherD += 1;
             gamedirectorsc.AddScore(teacherscore);
         }
 
         else if (this.gameObject.tag == "PTTeacher")
         {
+            PTTeacherD += 1;
             gamedirectorsc.AddScore(ptteacherrscore);
         }
 
         else if (this.gameObject.tag == "ScienceTeacher")
         {
+            ScienceTeacherD += 1;
             gamedirectorsc.AddScore(scienceTeacherscore);
         }
 
         else if (this.gameObject.tag == "kyoutou")
         {
+            kyoutouD += 1;
             gamedirectorsc.AddScore(kyoutouscore);
         }
         else if (this.gameObject.tag == "HeadTeacher")
         {
+            HeadTeacherD += 1;
             gamedirectorsc.AddScore(headteacherscore);
         }
         Debug.Log("PPPP");
