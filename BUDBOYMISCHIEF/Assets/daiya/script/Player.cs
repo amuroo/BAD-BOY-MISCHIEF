@@ -1,41 +1,39 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
 
-    public GameObject gamu;
+    public GameObject gum;
     public GameObject bakutiku;
     public GameObject dog;
     public GameObject coin;
 
-    bool gamuflag;
+    bool gumflag;
     bool bakutikuflag;
     bool dogflag;
     bool coinflag;
 
-    public float gamutime = 2.0f;
+    public float gumtime = 2.0f;
     public float bakutikutime = 2.0f;
     public float dogtime = 2.0f;
     public float cointime = 2.0f;
 
+  
 
 
     // Use this for initialization
     void Start () {
-        gamuflag = false;
+        gumflag = false;
         bakutikuflag = false;
-
-
     }
 
     // Update is called once per frame
     void Update() {
 
         ItemTimer();
-        ScreenTouch();
-
-      
+        ScreenTouch();      
     }
 
     void ScreenTouch() {
@@ -46,10 +44,10 @@ public class Player : MonoBehaviour {
                 //print(ScreenPoint);
 
                 if (ScreenPoint.y >= -600) {
-                    if (gamuflag && gamutime <= 0) {
-                        Instantiate(gamu, ScreenPoint, Quaternion.identity);
+                    if (gumflag && gumtime <= 0) {
+                        Instantiate(gum, ScreenPoint, Quaternion.identity);
 
-                        gamutime = 2.0f;
+                        gumtime = 2.0f;
                     }
                     else if (bakutikuflag && bakutikutime <= 0) {
                         Instantiate(bakutiku, ScreenPoint, Quaternion.identity);
@@ -76,14 +74,14 @@ public class Player : MonoBehaviour {
 
 
     void ItemTimer() {
-        gamutime -= Time.deltaTime;
+        gumtime -= Time.deltaTime;
         bakutikutime -= Time.deltaTime;
         dogtime -= Time.deltaTime;
         cointime -= Time.deltaTime;
     }
 
     public void Gamu() {
-        gamuflag = true;
+        gumflag = true;
         bakutikuflag = false;
         dogflag = false;
         coinflag = false;
@@ -91,21 +89,21 @@ public class Player : MonoBehaviour {
 
     public void Bakutiku() {
         bakutikuflag = true;
-        gamuflag = false;
+        gumflag = false;
         dogflag = false;
         coinflag = false;
     }
 
     public void Dog() {
         dogflag = true;
-        gamuflag = false;
+        gumflag = false;
         bakutikuflag = false;
         coinflag = false;
     }
 
     public void Coin() {
         coinflag = true;
-        gamuflag = false;
+        gumflag = false;
         bakutikuflag = false;
         dogflag = false;
     }

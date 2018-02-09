@@ -15,6 +15,7 @@ TagManager:
   - ScienceTeacher
   - Undefined
   - kyoutou
+  - GamuButton
   layers:
   - Default
   - TransparentFX
