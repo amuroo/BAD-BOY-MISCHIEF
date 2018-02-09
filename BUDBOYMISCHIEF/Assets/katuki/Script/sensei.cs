@@ -17,7 +17,7 @@ public class sensei : MonoBehaviour
     Player playersc;
     private int recastRan = 0;
     public AudioClip Damage;
-    public AudioClip Gamu;
+    public AudioClip Gum;
     public AudioClip dog;
     public int teacherscore;
     public int ptteacherrscore;
@@ -32,7 +32,7 @@ public class sensei : MonoBehaviour
     public static int HeadTeacherD;
 
     public static int In;
-    GameDirector gamedirectorsc;
+    GameDirector gumdirectorsc;
 
     void Start()
     {
@@ -40,7 +40,7 @@ public class sensei : MonoBehaviour
         xx = speed;
         anim = GetComponent<Animator>();
         playersc = GameObject.FindWithTag("Player").GetComponent<Player>();
-        gamedirectorsc = GameObject.FindWithTag("GameDirector").GetComponent<GameDirector>();
+        gumdirectorsc = GameObject.FindWithTag("GameDirector").GetComponent<GameDirector>();
 
     }
 
@@ -51,7 +51,7 @@ public class sensei : MonoBehaviour
             recastRan = Random.Range(0, 4);
             if (recastRan == 0)
             {
-                playersc.gamutime += 1;
+                playersc.gumtime += 1;
                 Debug.Log("recastGAMU");
             }
             else if (recastRan == 1)
@@ -86,22 +86,22 @@ public class sensei : MonoBehaviour
             else if (baku && time >= 1)
             {
                 if (this.gameObject.tag == "Teacher") {
-                    gamedirectorsc.AddScore(teacherscore);
+                    gumdirectorsc.AddScore(teacherscore);
                 }
 
                 else if (this.gameObject.tag == "PTTeacher") {
-                    gamedirectorsc.AddScore(ptteacherrscore);
+                    gumdirectorsc.AddScore(ptteacherrscore);
                 }
 
                 else if (this.gameObject.tag == "ScienceTeacher") {
-                    gamedirectorsc.AddScore(scienceTeacherscore);
+                    gumdirectorsc.AddScore(scienceTeacherscore);
                 }
 
                 else if (this.gameObject.tag == "kyoutou") {
-                    gamedirectorsc.AddScore(kyoutouscore);
+                    gumdirectorsc.AddScore(kyoutouscore);
                 }
                 else if (this.gameObject.tag == "HeadTeacher") {
-                    gamedirectorsc.AddScore(headteacherscore);
+                    gumdirectorsc.AddScore(headteacherscore);
                 }
                 Destroy(gameObject);
 
@@ -123,9 +123,9 @@ public class sensei : MonoBehaviour
             anim.SetBool("nige", true);
             Scorejudge();
         }
-        else if (other.gameObject.tag == "Gamu")
+        else if (other.gameObject.tag == "Gum")
         {
-            GetComponent<AudioSource>().PlayOneShot(Gamu);
+            GetComponent<AudioSource>().PlayOneShot(Gum);
             time = 0;
             xx = 0;
             stan = true;
@@ -150,30 +150,30 @@ public class sensei : MonoBehaviour
         if (this.gameObject.tag == "Teacher")
         {
             TeacherD += 1;
-            gamedirectorsc.AddScore(teacherscore);
+            gumdirectorsc.AddScore(teacherscore);
         }
 
         else if (this.gameObject.tag == "PTTeacher")
         {
             PTTeacherD += 1;
-            gamedirectorsc.AddScore(ptteacherrscore);
+            gumdirectorsc.AddScore(ptteacherrscore);
         }
 
         else if (this.gameObject.tag == "ScienceTeacher")
         {
             ScienceTeacherD += 1;
-            gamedirectorsc.AddScore(scienceTeacherscore);
+            gumdirectorsc.AddScore(scienceTeacherscore);
         }
 
         else if (this.gameObject.tag == "kyoutou")
         {
             kyoutouD += 1;
-            gamedirectorsc.AddScore(kyoutouscore);
+            gumdirectorsc.AddScore(kyoutouscore);
         }
         else if (this.gameObject.tag == "HeadTeacher")
         {
             HeadTeacherD += 1;
-            gamedirectorsc.AddScore(headteacherscore);
+            gumdirectorsc.AddScore(headteacherscore);
         }
         Debug.Log("PPPP");
     }

@@ -24,8 +24,8 @@ GameObject:
   - component: {fileID: 50752030677794460}
   - component: {fileID: 114246565221227430}
   m_Layer: 0
-  m_Name: GAMU
-  m_TagString: Gamu
+  m_Name: Gum
+  m_TagString: Gum
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

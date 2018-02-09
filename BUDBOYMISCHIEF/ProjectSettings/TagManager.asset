@@ -5,7 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bakuchiku
-  - Gamu
   - Dog
   - kane
   - GameDirector
@@ -15,7 +14,8 @@ TagManager:
   - ScienceTeacher
   - Undefined
   - kyoutou
-  - GamuButton
+  - GumButton
+  - Gum
   layers:
   - Default
   - TransparentFX

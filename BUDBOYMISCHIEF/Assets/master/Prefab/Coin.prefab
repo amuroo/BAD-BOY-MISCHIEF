@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 50038977503917612}
   - component: {fileID: 114953956641514984}
   m_Layer: 0
-  m_Name: Money
+  m_Name: Coin
   m_TagString: kane
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

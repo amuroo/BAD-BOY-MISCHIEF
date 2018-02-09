@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 50143650328945984}
   - component: {fileID: 114672615089057380}
   m_Layer: 0
-  m_Name: bakutiku
+  m_Name: Bakutiku
   m_TagString: Bakuchiku
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
