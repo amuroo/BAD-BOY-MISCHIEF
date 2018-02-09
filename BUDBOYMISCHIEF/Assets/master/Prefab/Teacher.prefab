@@ -20,9 +20,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4817910538092854}
   - component: {fileID: 212965676929642422}
+  - component: {fileID: 95573317769555886}
+  - component: {fileID: 114946566780530510}
+  - component: {fileID: 50522439114045636}
+  - component: {fileID: 60570707151250046}
   m_Layer: 0
   m_Name: Teacher
-  m_TagString: Untagged
+  m_TagString: Teacher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40,6 +44,128 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50522439114045636
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1342980951003624}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!60 &60570707151250046
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1342980951003624}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 250, y: 250}
+    newSize: {x: 250, y: 250}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 25, y: -84}
+      - {x: 35, y: -80}
+      - {x: 39, y: -62}
+      - {x: 38, y: -30}
+      - {x: 32, y: -16}
+      - {x: 46, y: -3}
+      - {x: 64, y: 14}
+      - {x: 67, y: 24}
+      - {x: 68, y: 37}
+      - {x: 68, y: 74}
+      - {x: 64, y: 87}
+      - {x: 53, y: 106}
+      - {x: 44, y: 116}
+      - {x: 33, y: 123}
+      - {x: 20, y: 125}
+      - {x: -29, y: 125}
+      - {x: -50, y: 113}
+      - {x: -64, y: 100}
+      - {x: -75, y: 81}
+      - {x: -76, y: 74}
+      - {x: -78, y: 69}
+      - {x: -78, y: 48}
+      - {x: -77, y: 37}
+      - {x: -71, y: 24}
+      - {x: -65, y: 13}
+      - {x: -47, y: -4}
+      - {x: -30, y: -15}
+      - {x: -35, y: -21}
+      - {x: -39, y: -58}
+      - {x: -38, y: -71}
+      - {x: -32, y: -79}
+      - {x: -26, y: -80}
+      - {x: -24, y: -91}
+      - {x: -18, y: -115}
+      - {x: -21, y: -119}
+      - {x: -20, y: -125}
+      - {x: 3, y: -125}
+      - {x: 4, y: -112}
+      - {x: 1, y: -109}
+      - {x: 14, y: -105}
+--- !u!95 &95573317769555886
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1342980951003624}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0a60326c14173b44ba6c0f6dfdca8e99, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114946566780530510
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1342980951003624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c35e842741d0b744994b915676e815b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  xx: 0
+  Damage: {fileID: 8300000, guid: 9246082d25942264f9c552c02e3d2e63, type: 3}
+  Gamu: {fileID: 8300000, guid: da94371cd9db9694895af64d2c606170, type: 3}
+  dog: {fileID: 8300000, guid: 6103dd1bf3174d84e8eb3ae1e08fe0f9, type: 3}
+  teacherscore: 0
+  ptteacherrscore: 0
+  scienceTeacherscore: 0
+  kyoutouscore: 0
+  headteacherscore: 0
 --- !u!212 &212965676929642422
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -74,7 +200,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 20c5485575f675c43a0d9a0c430269b9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b81c80737975ce944ac839c0e87a01cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

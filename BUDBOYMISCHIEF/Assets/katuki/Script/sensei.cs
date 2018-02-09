@@ -16,7 +16,9 @@ public class sensei : MonoBehaviour
     private bool Dog = false;
     Player playersc;
     private int recastRan = 0;
-
+    public AudioClip Damage;
+    public AudioClip Gamu;
+    public AudioClip dog;
     public int teacherscore;
     public int ptteacherrscore;
     public int scienceTeacherscore;
@@ -27,6 +29,7 @@ public class sensei : MonoBehaviour
 
     void Start()
     {
+        gameObject.AddComponent<AudioSource>();
         xx = speed;
         anim = GetComponent<Animator>();
         playersc = GameObject.FindWithTag("Player").GetComponent<Player>();
@@ -107,27 +110,59 @@ public class sensei : MonoBehaviour
     {
         if (other.gameObject.tag == "Bakuchiku")
         {
-            xx = 0;
-            anim.SetBool("break", true);
-            baku = true;
+            GetComponent<AudioSource>().PlayOneShot(Damage);
+            xx = -speed * 1.5f;
+            anim.SetBool("nige", true);
+            Scorejudge();
         }
         else if (other.gameObject.tag == "Gamu")
         {
+            GetComponent<AudioSource>().PlayOneShot(Gamu);
             time = 0;
             xx = 0;
             stan = true;
             anim.SetBool("break", true);
         }
-        else if (other.gameObject.tag == "Dog" && this.gameObject.tag != "scientist")
+        else if (other.gameObject.tag == "Dog" && this.gameObject.tag != "ScienceTeacher")
         {
             Dog = true;
+            GetComponent<AudioSource>().PlayOneShot(dog);
             anim.SetBool("nige", true);
             xx = speed * -1 * 1.5f;
-        }else if (other.gameObject.tag == "Dog" && this.gameObject.tag == "scientist")
+            Scorejudge();
+        }else if (other.gameObject.tag == "Dog" && this.gameObject.tag == "ScienceTeacher")
         {
             xx = 0;
         }
 
+    }
+
+    void Scorejudge()
+    {
+        if (this.gameObject.tag == "Teacher")
+        {
+            gamedirectorsc.AddScore(teacherscore);
+        }
+
+        else if (this.gameObject.tag == "PTTeacher")
+        {
+            gamedirectorsc.AddScore(ptteacherrscore);
+        }
+
+        else if (this.gameObject.tag == "ScienceTeacher")
+        {
+            gamedirectorsc.AddScore(scienceTeacherscore);
+        }
+
+        else if (this.gameObject.tag == "kyoutou")
+        {
+            gamedirectorsc.AddScore(kyoutouscore);
+        }
+        else if (this.gameObject.tag == "HeadTeacher")
+        {
+            gamedirectorsc.AddScore(headteacherscore);
+        }
+        Debug.Log("PPPP");
     }
 
 

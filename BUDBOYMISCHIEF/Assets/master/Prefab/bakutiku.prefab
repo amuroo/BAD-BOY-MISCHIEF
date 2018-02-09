@@ -101,6 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   count: 1
   death: 1
+  haiti: {fileID: 8300000, guid: 88b39090b1f06ed41bf4f424a1eba8c2, type: 3}
 --- !u!212 &212366077280552366
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -31,7 +31,7 @@ public class Dog : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag == "scientist")
+        if(other.gameObject.tag == "ScienceTeacher")
         {
             speed = -1.5f;
 
