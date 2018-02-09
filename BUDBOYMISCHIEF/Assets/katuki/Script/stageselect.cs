@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class stageselect : MonoBehaviour {
    
-    private int x = 0;
+    private int x;
 	// Use this for initialization
 	void Start () {
         x = PlayerPrefs.GetInt("ClearStage");
