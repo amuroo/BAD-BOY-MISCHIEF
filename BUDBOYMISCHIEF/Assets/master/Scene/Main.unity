@@ -210,12 +210,7 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 114308840083098478, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 612358419}
-    - target: {fileID: 114203873505654340, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+    - target: {fileID: 114790487023535848, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -225,7 +220,12 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 612358419}
-    - target: {fileID: 114790487023535848, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+    - target: {fileID: 114203873505654340, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 612358419}
+    - target: {fileID: 114308840083098478, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -266,8 +266,8 @@ MonoBehaviour:
   coin: {fileID: 1722237926639398, guid: 61165d26dcf3d8e47916eedb647e36c2, type: 2}
   gumtime: 2
   bakutikutime: 2
-  dogtime: 2
-  cointime: 2
+  dogtime: 5
+  cointime: 5
 --- !u!4 &612358420
 Transform:
   m_ObjectHideFlags: 0

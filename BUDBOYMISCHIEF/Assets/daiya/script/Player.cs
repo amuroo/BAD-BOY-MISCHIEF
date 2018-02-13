@@ -15,10 +15,10 @@ public class Player : MonoBehaviour {
     bool dogflag;
     bool coinflag;
 
-    public float gumtime = 2.0f;
-    public float bakutikutime = 2.0f;
-    public float dogtime = 2.0f;
-    public float cointime = 2.0f;
+    public float gumtime;
+    public float bakutikutime;
+    public float dogtime;
+    public float cointime;
 
   
 
@@ -27,6 +27,12 @@ public class Player : MonoBehaviour {
     void Start () {
         gumflag = false;
         bakutikuflag = false;
+
+        gumtime = 0;
+        bakutikutime = 0;
+        dogtime = 0;
+        cointime = 0;
+
     }
 
     // Update is called once per frame

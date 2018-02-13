@@ -46,8 +46,8 @@ public class sensei : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.y == -900 /*&& this.gameObject.tag == "kyoutou"*/)
-        {
+        //if (transform.position.y == -900 /*&& this.gameObject.tag == "kyoutou"*/)
+        /*{
             recastRan = Random.Range(0, 4);
             if (recastRan == 0)
             {
@@ -71,7 +71,7 @@ public class sensei : MonoBehaviour
                 Debug.Log("recastBAKUTIKU");
 
             }
-        }
+        }*/
         transform.Translate(new Vector2(X, xx * -10));
         if (stan || baku )
         {
