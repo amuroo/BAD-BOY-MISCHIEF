@@ -16,6 +16,7 @@ TagManager:
   - kyoutou
   - GumButton
   - Gum
+  - DogButton
   layers:
   - Default
   - TransparentFX
