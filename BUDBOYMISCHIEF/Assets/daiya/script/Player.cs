@@ -44,6 +44,7 @@ public class Player : MonoBehaviour {
 
     void ScreenTouch() {
         if (Input.touchCount > 0) {
+            print("a");
             if (Input.GetTouch(0).phase == TouchPhase.Began) {
                 Vector3 ScreenPoint = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
                 ScreenPoint.z = 1.0f;
@@ -86,7 +87,7 @@ public class Player : MonoBehaviour {
         cointime -= Time.deltaTime;
     }
 
-    public void Gamu() {
+    public void Gum() {
         gumflag = true;
         bakutikuflag = false;
         dogflag = false;

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Result : MonoBehaviour {
     private string evaluation;
@@ -14,9 +15,13 @@ public class Result : MonoBehaviour {
     public Text kyoutou;
     public Text HeadTeacher;
     public Text In;
+    public GameObject Pop;
 
     // Use this for initialization
     void Start () {
+
+        Pop.SetActive(false);
+
         GameDirector.score = 50;
         Score.text = GameDirector.score.ToString();
         if (GameDirector.score >= 100) {
@@ -41,6 +46,41 @@ public class Result : MonoBehaviour {
         kyoutou.text = sensei.kyoutouD.ToString();
         HeadTeacher.text = sensei.HeadTeacherD.ToString();
         In.text = sensei.In.ToString();
+    }
+
+    void Update() {
+        if(Input.touchCount > 0) {
+            Pop.SetActive(true);
+        }
+    }
+
+    public void Gotitle() {
+        SceneManager.LoadScene("Title");
+    }
+
+    public void Gonext() {
+        if (GameDirector.clearstage == "Stage1") {
+            SceneManager.LoadScene("Stage2");
+        }
+        else if (GameDirector.clearstage == "Stage2") {
+            SceneManager.LoadScene("Stage3");
+        }
+        else if (GameDirector.clearstage == "Stage3") {
+            SceneManager.LoadScene("Stage4");
+        }
+        else if (GameDirector.clearstage == "Stage4") {
+            SceneManager.LoadScene("Stage5");
+        }
+                
+           
+
+        
+      
+        
+    }
+
+    public void Gorestart() {
+        SceneManager.LoadScene(GameDirector.clearstage);
     }
 
 }

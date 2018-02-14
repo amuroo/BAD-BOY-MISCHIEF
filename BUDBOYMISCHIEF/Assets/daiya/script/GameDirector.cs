@@ -4,22 +4,34 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
 public class GameDirector : MonoBehaviour {
-    private float time = 1.0f;
+    private float time = 10.0f;
     public Text timeText;
     public static int score = 0;
     public Text scoretext;
+    public static string clearstage;
 
 
+    void Start() {
+        clearstage= SceneManager.GetActiveScene().name;
+
+
+    }
     void Update() {
-        time = Mathf.Min(0.0f, time);
+
+      
         time -= Time.deltaTime;
-        timeText.text = time.ToString("F2");
+        timeText.text = time.ToString("F1");
 
         scoretext.text = score.ToString();
 
-        if (time <= 00.0f) {
-            //SceneManager.LoadScene("Result");
+        if (time < 0) {
+            time = 0;
+           
+
+            ClearStage(clearstage);
+            SceneManager.LoadScene("Result");
 
         }
 
@@ -28,5 +40,24 @@ public class GameDirector : MonoBehaviour {
     public void AddScore(int amount) {
         score += amount;
        
+    }
+
+    public void ClearStage(string stage) {
+        if (PlayerPrefs.GetInt("ClearStage") < 1 && stage=="Stage1") {
+            PlayerPrefs.SetInt("ClearStage", 1);
+        }
+        else if (PlayerPrefs.GetInt("ClearStage") < 2 && stage == "Stage2") {
+            PlayerPrefs.SetInt("ClearStage", 2);
+        }
+        else if (PlayerPrefs.GetInt("ClearStage") < 3 && stage == "Stage3") {
+            PlayerPrefs.SetInt("ClearStage", 3);
+        }
+        else if (PlayerPrefs.GetInt("ClearStage") < 4 && stage == "Stage4") {
+            PlayerPrefs.SetInt("ClearStage", 4);
+        }
+        else if (PlayerPrefs.GetInt("ClearStage") < 5 && stage == "Stage5") {
+            PlayerPrefs.SetInt("ClearStage", 5);
+        }
+
     }
 }

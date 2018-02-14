@@ -209,11 +209,11 @@ MonoBehaviour:
   Damage: {fileID: 8300000, guid: 9246082d25942264f9c552c02e3d2e63, type: 3}
   Gum: {fileID: 0}
   dog: {fileID: 8300000, guid: 6103dd1bf3174d84e8eb3ae1e08fe0f9, type: 3}
-  teacherscore: 0
-  ptteacherrscore: 0
-  scienceTeacherscore: 0
-  kyoutouscore: 0
-  headteacherscore: 0
+  teacherscore: 10
+  ptteacherrscore: 20
+  scienceTeacherscore: 30
+  kyoutouscore: 30
+  headteacherscore: 30
 --- !u!212 &212496427550889084
 SpriteRenderer:
   m_ObjectHideFlags: 1
