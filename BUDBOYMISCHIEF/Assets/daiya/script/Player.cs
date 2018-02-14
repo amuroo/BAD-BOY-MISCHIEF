@@ -64,13 +64,13 @@ public class Player : MonoBehaviour {
                     else if (dogflag && dogtime <= 0) {
                         Instantiate(dog, ScreenPoint, Quaternion.identity);
 
-                        dogtime = 2.0f;
+                        dogtime = 5.0f;
 
                     }
                     else if (coinflag && cointime <= 0) {
                         Instantiate(coin, ScreenPoint, Quaternion.identity);
 
-                        cointime = 2.0f;
+                        cointime = 5.0f;
 
                     }
                 }
