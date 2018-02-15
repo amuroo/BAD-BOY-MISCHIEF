@@ -46,9 +46,14 @@ public class sensei : MonoBehaviour
 
     void Update()
     {
-        //if (transform.position.y == -900 /*&& this.gameObject.tag == "kyoutou"*/)
-        /*{
-            recastRan = Random.Range(0, 4);
+        if (transform.position.y == -900 && this.gameObject.tag == "kyoutou")
+        {
+            playersc.gumtime += 2;
+            playersc.bakutikutime += 2;
+            playersc.dogtime += 2;
+            playersc.cointime += 2;
+
+            /*recastRan = Random.Range(0, 4);
             if (recastRan == 0)
             {
                 playersc.gumtime += 1;
@@ -70,8 +75,8 @@ public class sensei : MonoBehaviour
                 playersc.bakutikutime += 1;
                 Debug.Log("recastBAKUTIKU");
 
-            }
-        }*/
+            }*/
+        }
         transform.Translate(new Vector2(X, xx * -10));
         if (stan || baku )
         {

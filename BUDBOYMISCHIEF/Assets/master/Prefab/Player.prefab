@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a6d8c8215f6a86439629f6f42b7c43c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gum: {fileID: 1010761649572716, guid: 810d6cfa0d2d3714e8cc5bcee4a8eb04, type: 2}
+  gum: {fileID: 1753820757667804, guid: 0faaa280cd50a494da0c7d1997031a5a, type: 2}
   bakutiku: {fileID: 1235479682791452, guid: e6c095a77e02ded4d9b908390b451a49, type: 2}
   dog: {fileID: 1575280115183544, guid: 1fd67813d166d6b4ab4496a97cb23b2e, type: 2}
   coin: {fileID: 1722237926639398, guid: 61165d26dcf3d8e47916eedb647e36c2, type: 2}
