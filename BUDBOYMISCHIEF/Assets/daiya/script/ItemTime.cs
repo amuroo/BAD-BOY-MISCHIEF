@@ -21,7 +21,7 @@ public class ItemTime : MonoBehaviour {
             BakutikuCal();
         
         if (this.gameObject.tag == "GumButton") 
-            GamuCal();
+            GumCal();
         
         if (this.gameObject.tag == "DogButton") 
             DogCal();
@@ -34,36 +34,40 @@ public class ItemTime : MonoBehaviour {
 
     void BakutikuCal() {
         if (UIobj.fillAmount > 0) {
-            UIobj.fillAmount -= 1.0f / playercs.bakutikutime * Time.deltaTime;
+            UIobj.fillAmount -= 1.0f / 2.0f * Time.deltaTime;
         }
 
-
-            if (UIobj.fillAmount < 0) {
-                UIobj.fillAmount = 1.0f;
-            }
-        
-
-    }
-    void GamuCal() {
-        print("a");
-        if (UIobj.fillAmount > 0) {
-            UIobj.fillAmount -= 1.0f / playercs.gumtime * Time.deltaTime;
-        }
-        if (UIobj.fillAmount == 0) {
+        if (playercs.gumtime == 2.0f) {
             UIobj.fillAmount = 1.0f;
         }
-
-
     }
-    void DogCal() {
+
+    void GumCal() {
         if (UIobj.fillAmount > 0) {
-            UIobj.fillAmount -= 1.0f / playercs.dogtime * Time.deltaTime;
+            UIobj.fillAmount -= 1.0f / 2.0f * Time.deltaTime;
         }
 
+        if (playercs.gumtime == 2.0f) {
+            UIobj.fillAmount = 1.0f;
+        }
     }
+
+    void DogCal() {
+        if (UIobj.fillAmount > 0) {
+            UIobj.fillAmount -= 1.0f /5.0f * Time.deltaTime;
+        }
+
+        if (playercs.gumtime == 5.0f) {
+            UIobj.fillAmount = 1.0f;
+        }
+    }
+
     void CoinCal() {
         if (UIobj.fillAmount > 0) {
-            UIobj.fillAmount -= 1.0f / playercs.cointime * Time.deltaTime;
+            UIobj.fillAmount -= 1.0f / 5.0f * Time.deltaTime;
+        }
+        if (playercs.gumtime == 5.0f) {
+            UIobj.fillAmount = 1.0f;
         }
 
     }

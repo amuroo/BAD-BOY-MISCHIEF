@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 
 public class GameDirector : MonoBehaviour {
-    private float time = 10.0f;
+    private float time = 60.0f;
     public Text timeText;
     public static int score = 0;
     public Text scoretext;
@@ -14,13 +14,17 @@ public class GameDirector : MonoBehaviour {
 
 
     void Start() {
-        clearstage= SceneManager.GetActiveScene().name;
+        score = 0;
+        clearstage = null;
+        sensei.TeacherD = 0;
+        sensei.TeacherD = 0;
+        sensei.TeacherD = 0;
+        sensei.TeacherD = 0;
+        sensei.TeacherD = 0;
 
-
+        clearstage = SceneManager.GetActiveScene().name;
     }
     void Update() {
-
-      
         time -= Time.deltaTime;
         timeText.text = time.ToString("F1");
 
@@ -28,18 +32,14 @@ public class GameDirector : MonoBehaviour {
 
         if (time < 0) {
             time = 0;
-           
-
+            
             ClearStage(clearstage);
             SceneManager.LoadScene("Result");
-
         }
-
     }
 
     public void AddScore(int amount) {
-        score += amount;
-       
+        score += amount;    
     }
 
     public void ClearStage(string stage) {
@@ -58,6 +58,5 @@ public class GameDirector : MonoBehaviour {
         else if (PlayerPrefs.GetInt("ClearStage") < 5 && stage == "Stage5") {
             PlayerPrefs.SetInt("ClearStage", 5);
         }
-
     }
 }

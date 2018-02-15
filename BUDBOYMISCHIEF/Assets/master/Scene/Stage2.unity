@@ -619,6 +619,56 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Coin
       objectReference: {fileID: 0}
+    - target: {fileID: 114749777378941232, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114749777378941232, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114749777378941232, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114002324516205308, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+        type: 2}
+      propertyPath: m_FontData.m_BestFit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114002324516205308, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114002324516205308, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114002324516205308, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114886984364458966, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114886984364458966, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114886984364458966, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b, type: 2}
   m_IsPrefabParent: 0

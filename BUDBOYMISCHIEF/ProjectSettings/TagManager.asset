@@ -17,6 +17,7 @@ TagManager:
   - GumButton
   - Gum
   - DogButton
+  - BakutikuButton
   layers:
   - Default
   - TransparentFX

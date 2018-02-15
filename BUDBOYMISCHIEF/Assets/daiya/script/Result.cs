@@ -19,25 +19,13 @@ public class Result : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        EvaCal();
 
         Pop.SetActive(false);
 
-        GameDirector.score = 50;
+        
         Score.text = GameDirector.score.ToString();
-        if (GameDirector.score >= 100) {
-            evaluation = "星3つ";
-
-        }
-        else if (GameDirector.score >= 50) {
-            evaluation = "星2つ";
-
-
-        }
-        else if (GameDirector.score >= 30) {
-            evaluation = "星1つ";
-
-
-        }
+        
         evatext.text = evaluation;
 
         Teacher.text = sensei.TeacherD.ToString();
@@ -52,6 +40,71 @@ public class Result : MonoBehaviour {
         if(Input.touchCount > 0) {
             Pop.SetActive(true);
         }
+    }
+
+    public void EvaCal() {
+        switch (GameDirector.clearstage) {
+            case "Stage1":               
+                if (GameDirector.score >= 100) {
+                    evaluation = "星3つ";
+                }
+                else if (GameDirector.score >= 50) {
+                    evaluation = "星2つ";
+                }
+                else if (GameDirector.score < 50) {
+                    evaluation = "星1つ";
+                }
+                break;
+
+            case "Stage2":
+                if (GameDirector.score >= 150) {
+                    evaluation = "星3つ";
+                }
+                else if (GameDirector.score >= 100) {
+                    evaluation = "星2つ";
+                }
+                else if (GameDirector.score < 100) {
+                    evaluation = "星1つ";
+                }
+                break;
+
+            case "Stage3":
+                if (GameDirector.score >= 150) {
+                    evaluation = "星3つ";
+                }
+                else if (GameDirector.score >= 100) {
+                    evaluation = "星2つ";
+                }
+                else if (GameDirector.score < 100) {
+                    evaluation = "星1つ";
+                }
+                break;
+
+            case "Stage4":
+                if (GameDirector.score >= 180) {
+                    evaluation = "星3つ";
+                }
+                else if (GameDirector.score >= 130) {
+                    evaluation = "星2つ";
+                }
+                else if (GameDirector.score < 130) {
+                    evaluation = "星1つ";
+                }
+                break;
+
+            case "Stage5":
+                if (GameDirector.score >= 200) {
+                    evaluation = "星3つ";
+                }
+                else if (GameDirector.score >= 150) {
+                    evaluation = "星2つ";
+                }
+                else if (GameDirector.score < 150) {
+                    evaluation = "星1つ";
+                }
+                break;
+        }
+
     }
 
     public void Gotitle() {
@@ -70,13 +123,7 @@ public class Result : MonoBehaviour {
         }
         else if (GameDirector.clearstage == "Stage4") {
             SceneManager.LoadScene("Stage5");
-        }
-                
-           
-
-        
-      
-        
+        }     
     }
 
     public void Gorestart() {

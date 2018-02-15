@@ -20,9 +20,6 @@ public class Player : MonoBehaviour {
     public float dogtime;
     public float cointime;
 
-  
-
-
     // Use this for initialization
     void Start () {
         gumflag = false;
@@ -32,19 +29,17 @@ public class Player : MonoBehaviour {
         bakutikutime = 0;
         dogtime = 0;
         cointime = 0;
-
     }
 
     // Update is called once per frame
     void Update() {
-
         ItemTimer();
         ScreenTouch();      
     }
 
     void ScreenTouch() {
         if (Input.touchCount > 0) {
-            print("a");
+           
             if (Input.GetTouch(0).phase == TouchPhase.Began) {
                 Vector3 ScreenPoint = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
                 ScreenPoint.z = 1.0f;
@@ -60,19 +55,16 @@ public class Player : MonoBehaviour {
                         Instantiate(bakutiku, ScreenPoint, Quaternion.identity);
 
                         bakutikutime = 2.0f;
-
                     }
                     else if (dogflag && dogtime <= 0) {
                         Instantiate(dog, ScreenPoint, Quaternion.identity);
 
                         dogtime = 5.0f;
-
                     }
                     else if (coinflag && cointime <= 0) {
                         Instantiate(coin, ScreenPoint, Quaternion.identity);
 
                         cointime = 5.0f;
-
                     }
                 }
             }
