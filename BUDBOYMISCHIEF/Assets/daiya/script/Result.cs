@@ -25,12 +25,13 @@ public class Result : MonoBehaviour {
     // Use this for initialization
     void Start () {
         GameDirector.score -= sensei.In * 10;
-        EvaCal();
+        
 
         //追加
         eva_star0.SetActive(false);
         eva_star1.SetActive(false);
         eva_star2.SetActive(false);
+        EvaCal();
 
         Pop.SetActive(false);
         
@@ -38,12 +39,12 @@ public class Result : MonoBehaviour {
         
         evatext.text = evaluation;
 
-        Teacher.text = "×　" + sensei.TeacherD.ToString();
-        PTTeacher.text = "×　" + sensei.PTTeacherD.ToString();
-        ScienceTeacher.text = "×　" + sensei.ScienceTeacherD.ToString();
-        kyoutou.text = "×　" + sensei.kyoutouD.ToString();
-        HeadTeacher.text = "×　" + sensei.HeadTeacherD.ToString();
-        In.text = "通した数　" + sensei.In.ToString();
+        Teacher.text = "× " + sensei.TeacherD.ToString();
+        PTTeacher.text = "× " + sensei.PTTeacherD.ToString();
+        ScienceTeacher.text = "× " + sensei.ScienceTeacherD.ToString();
+        kyoutou.text = "× " + sensei.kyoutouD.ToString();
+        HeadTeacher.text = "× " + sensei.HeadTeacherD.ToString();
+        In.text = "通した数 " + sensei.In.ToString();
     }
 
     void Update() {
@@ -57,6 +58,7 @@ public class Result : MonoBehaviour {
             case "Stage1":               
                 if (GameDirector.score >= 100) {
 
+
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                     eva_star2.SetActive(true);
@@ -67,7 +69,7 @@ public class Result : MonoBehaviour {
                     eva_star1.SetActive(true);
                 }
                 else if (GameDirector.score < 50) {
-
+                    Debug.Log("ok");
                     eva_star0.SetActive(true);
                 }
                 break;
