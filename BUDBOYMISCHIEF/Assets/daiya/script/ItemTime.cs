@@ -57,7 +57,7 @@ public class ItemTime : MonoBehaviour {
             UIobj.fillAmount -= 1.0f /5.0f * Time.deltaTime;
         }
 
-        if (playercs.gumtime == 5.0f) {
+        if (playercs.dogtime == 5.0f) {
             UIobj.fillAmount = 1.0f;
         }
     }
@@ -66,7 +66,7 @@ public class ItemTime : MonoBehaviour {
         if (UIobj.fillAmount > 0) {
             UIobj.fillAmount -= 1.0f / 5.0f * Time.deltaTime;
         }
-        if (playercs.gumtime == 5.0f) {
+        if (playercs.cointime == 5.0f) {
             UIobj.fillAmount = 1.0f;
         }
     }
