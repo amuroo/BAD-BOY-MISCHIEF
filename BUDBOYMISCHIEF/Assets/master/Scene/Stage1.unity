@@ -639,6 +639,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Coin
       objectReference: {fileID: 0}
+    - target: {fileID: 212832008200096318, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b, type: 2}
   m_IsPrefabParent: 0
