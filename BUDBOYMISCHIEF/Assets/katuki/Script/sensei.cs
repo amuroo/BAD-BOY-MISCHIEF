@@ -49,8 +49,8 @@ public class sensei : MonoBehaviour
         {
             playersc.gumtime += 2;
             playersc.bakutikutime += 2;
-            playersc.dogtime += 2;
-            playersc.cointime += 2;
+            playersc.dogtime += 5;
+            playersc.cointime += 5;
 
             /*recastRan = Random.Range(0, 4);
             if (recastRan == 0)

@@ -37,7 +37,7 @@ public class ItemTime : MonoBehaviour {
             UIobj.fillAmount -= 1.0f / 2.0f * Time.deltaTime;
         }
 
-        if (playercs.gumtime == 2.0f) {
+        if (playercs.bakutikutime == 2.0f) {
             UIobj.fillAmount = 1.0f;
         }
     }

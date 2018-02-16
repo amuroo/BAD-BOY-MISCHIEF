@@ -390,6 +390,26 @@ Prefab:
       value: 
       objectReference: {fileID: 1753820757667804, guid: 0faaa280cd50a494da0c7d1997031a5a,
         type: 2}
+    - target: {fileID: 114113292939419702, guid: 9593cd28766a3a24ba9fb253f33c6367,
+        type: 2}
+      propertyPath: gumtime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114113292939419702, guid: 9593cd28766a3a24ba9fb253f33c6367,
+        type: 2}
+      propertyPath: bakutikutime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114113292939419702, guid: 9593cd28766a3a24ba9fb253f33c6367,
+        type: 2}
+      propertyPath: dogtime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114113292939419702, guid: 9593cd28766a3a24ba9fb253f33c6367,
+        type: 2}
+      propertyPath: cointime
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9593cd28766a3a24ba9fb253f33c6367, type: 2}
   m_IsPrefabParent: 0
