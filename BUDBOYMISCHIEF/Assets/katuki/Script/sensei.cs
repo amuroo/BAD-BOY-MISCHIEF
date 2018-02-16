@@ -81,7 +81,7 @@ public class sensei : MonoBehaviour
         {
             time += Time.deltaTime;
             X = 0;
-            if (stan && time >= 3)
+            if (stan && time >= 1.5f)
             {
                 stan = false;
                 xx = speed;
