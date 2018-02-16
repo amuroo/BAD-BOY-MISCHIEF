@@ -287,6 +287,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &160611628 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114457497472762086, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1227923984}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &405159819
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,6 +416,35 @@ Prefab:
       propertyPath: cointime
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114113292939419702, guid: 9593cd28766a3a24ba9fb253f33c6367,
+        type: 2}
+      propertyPath: itemeImg
+      value: 
+      objectReference: {fileID: 160611628}
+    - target: {fileID: 114113292939419702, guid: 9593cd28766a3a24ba9fb253f33c6367,
+        type: 2}
+      propertyPath: gumsprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b2f01f8ebfa89fd46924fd7849a57a62,
+        type: 3}
+    - target: {fileID: 114113292939419702, guid: 9593cd28766a3a24ba9fb253f33c6367,
+        type: 2}
+      propertyPath: bakutikusprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 37c8ae3d4aa732f4eb83e9b199bb5ccc,
+        type: 3}
+    - target: {fileID: 114113292939419702, guid: 9593cd28766a3a24ba9fb253f33c6367,
+        type: 2}
+      propertyPath: dogsprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a180fa37c75d5da43ba3f174cb480016,
+        type: 3}
+    - target: {fileID: 114113292939419702, guid: 9593cd28766a3a24ba9fb253f33c6367,
+        type: 2}
+      propertyPath: coinsprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2e41eeda85f257c4eb79da64965ef454,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9593cd28766a3a24ba9fb253f33c6367, type: 2}
   m_IsPrefabParent: 0
@@ -595,54 +630,29 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114203873505654340, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 476684229}
+    - target: {fileID: 114308840083098478, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 476684229}
+    - target: {fileID: 114515831150133480, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 476684229}
+    - target: {fileID: 114790487023535848, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 476684229}
     - target: {fileID: 1200768285559954, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b, type: 2}
       propertyPath: m_Name
       value: 'Canvas '
-      objectReference: {fileID: 0}
-    - target: {fileID: 114790487023535848, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 476684229}
-    - target: {fileID: 114790487023535848, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Gum
-      objectReference: {fileID: 0}
-    - target: {fileID: 114515831150133480, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 476684229}
-    - target: {fileID: 114515831150133480, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Bakutiku
-      objectReference: {fileID: 0}
-    - target: {fileID: 114308840083098478, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 476684229}
-    - target: {fileID: 114308840083098478, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Dog
-      objectReference: {fileID: 0}
-    - target: {fileID: 114203873505654340, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 476684229}
-    - target: {fileID: 114203873505654340, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Coin
-      objectReference: {fileID: 0}
-    - target: {fileID: 212832008200096318, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b, type: 2}

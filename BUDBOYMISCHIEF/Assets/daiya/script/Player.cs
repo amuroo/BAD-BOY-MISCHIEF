@@ -20,11 +20,18 @@ public class Player : MonoBehaviour {
     public float dogtime;
     public float cointime;
 
-   
+    public Image itemeImg;
+    public Sprite gumsprite;
+    public Sprite bakutikusprite;
+    public Sprite dogsprite;
+    public Sprite coinsprite;
+
+
+
 
     // Use this for initialization
     void Start () {
-        gumflag = false;
+        gumflag = true;
         bakutikuflag = false;
         dogflag = false;
         coinflag = false;
@@ -33,6 +40,8 @@ public class Player : MonoBehaviour {
         bakutikutime = 0;
         dogtime = 0;
         cointime = 0;
+
+        //itemeImg = GetComponent<Image>();
     }
 
     // Update is called once per frame
@@ -91,6 +100,7 @@ public class Player : MonoBehaviour {
     }
 
     public void Gum() {
+        itemeImg.sprite = gumsprite;
         GetComponent<AudioSource>().Play();
         gumflag = true;
         bakutikuflag = false;
@@ -99,6 +109,7 @@ public class Player : MonoBehaviour {
     }
 
     public void Bakutiku() {
+        itemeImg.sprite = bakutikusprite;
         GetComponent<AudioSource>().Play();
         bakutikuflag = true;
         gumflag = false;
@@ -107,6 +118,7 @@ public class Player : MonoBehaviour {
     }
 
     public void Dog() {
+        itemeImg.sprite = dogsprite;
         GetComponent<AudioSource>().Play();
         dogflag = true;
         gumflag = false;
@@ -115,6 +127,7 @@ public class Player : MonoBehaviour {
     }
 
     public void Coin() {
+        itemeImg.sprite = coinsprite;
         GetComponent<AudioSource>().Play();
         coinflag = true;
         gumflag = false;

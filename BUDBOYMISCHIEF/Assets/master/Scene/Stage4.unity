@@ -453,6 +453,35 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114113292939419702, guid: 9593cd28766a3a24ba9fb253f33c6367,
+        type: 2}
+      propertyPath: itemeImg
+      value: 
+      objectReference: {fileID: 1395319400}
+    - target: {fileID: 114113292939419702, guid: 9593cd28766a3a24ba9fb253f33c6367,
+        type: 2}
+      propertyPath: gumsprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b2f01f8ebfa89fd46924fd7849a57a62,
+        type: 3}
+    - target: {fileID: 114113292939419702, guid: 9593cd28766a3a24ba9fb253f33c6367,
+        type: 2}
+      propertyPath: bakutikusprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 37c8ae3d4aa732f4eb83e9b199bb5ccc,
+        type: 3}
+    - target: {fileID: 114113292939419702, guid: 9593cd28766a3a24ba9fb253f33c6367,
+        type: 2}
+      propertyPath: dogsprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a180fa37c75d5da43ba3f174cb480016,
+        type: 3}
+    - target: {fileID: 114113292939419702, guid: 9593cd28766a3a24ba9fb253f33c6367,
+        type: 2}
+      propertyPath: coinsprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2e41eeda85f257c4eb79da64965ef454,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9593cd28766a3a24ba9fb253f33c6367, type: 2}
   m_IsPrefabParent: 0
@@ -614,6 +643,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1395319397}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1395319400 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114457497472762086, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1395319397}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &2055214003
 Prefab:
   m_ObjectHideFlags: 0

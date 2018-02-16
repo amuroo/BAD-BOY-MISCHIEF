@@ -429,68 +429,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIobj: {fileID: 632484930}
---- !u!1 &863144472
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 863144475}
-  - component: {fileID: 863144474}
-  - component: {fileID: 863144473}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &863144473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 863144472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
---- !u!114 &863144474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 863144472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 5
---- !u!4 &863144475
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 863144472}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1119770801
 Prefab:
   m_ObjectHideFlags: 0
@@ -663,6 +601,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224338240641567516, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
     type: 2}
   m_PrefabInternal: {fileID: 1119770801}
+--- !u!114 &1119770808 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114457497472762086, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1119770801}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1266228857
 Prefab:
   m_ObjectHideFlags: 0
@@ -978,6 +922,35 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114113292939419702, guid: 9593cd28766a3a24ba9fb253f33c6367,
+        type: 2}
+      propertyPath: itemeImg
+      value: 
+      objectReference: {fileID: 1119770808}
+    - target: {fileID: 114113292939419702, guid: 9593cd28766a3a24ba9fb253f33c6367,
+        type: 2}
+      propertyPath: gumsprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b2f01f8ebfa89fd46924fd7849a57a62,
+        type: 3}
+    - target: {fileID: 114113292939419702, guid: 9593cd28766a3a24ba9fb253f33c6367,
+        type: 2}
+      propertyPath: bakutikusprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 37c8ae3d4aa732f4eb83e9b199bb5ccc,
+        type: 3}
+    - target: {fileID: 114113292939419702, guid: 9593cd28766a3a24ba9fb253f33c6367,
+        type: 2}
+      propertyPath: dogsprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a180fa37c75d5da43ba3f174cb480016,
+        type: 3}
+    - target: {fileID: 114113292939419702, guid: 9593cd28766a3a24ba9fb253f33c6367,
+        type: 2}
+      propertyPath: coinsprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2e41eeda85f257c4eb79da64965ef454,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9593cd28766a3a24ba9fb253f33c6367, type: 2}
   m_IsPrefabParent: 0
