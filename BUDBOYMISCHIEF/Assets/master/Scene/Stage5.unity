@@ -378,7 +378,7 @@ MonoBehaviour:
   - {fileID: 1869754301161336, guid: 9f1b6662477f6ae438c642ea49866871, type: 2}
   - {fileID: 1948324033889986, guid: 74c668dbd0d5d7f40ac08af5f5544fe0, type: 2}
   - {fileID: 1478568950093380, guid: 7df89500686bfb843ac17056bae7fce2, type: 2}
-  - {fileID: 1762428610251224, guid: 249645bfe0729bb4c97923c228d6502a, type: 2}
+  - {fileID: 1474287421440422, guid: b2ef006b983842a44955784b4b935b03, type: 2}
   time: 4
   plus: 0
   div: 21
@@ -521,7 +521,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
