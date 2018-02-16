@@ -47,10 +47,10 @@ public class sensei : MonoBehaviour
     {
         if (transform.position.y == -900 && this.gameObject.tag == "kyoutou")
         {
-            playersc.gumtime += 2;
-            playersc.bakutikutime += 2;
-            playersc.dogtime += 5;
-            playersc.cointime += 5;
+            playersc.gumtime = 2;
+            playersc.bakutikutime = 2;
+            playersc.dogtime = 5;
+            playersc.cointime = 5;
 
             /*recastRan = Random.Range(0, 4);
             if (recastRan == 0)
@@ -111,11 +111,16 @@ public class sensei : MonoBehaviour
 
             }
         }
-        if(transform.position.y >= 1900 || transform.position.y <= -1500)
-        {
+
+        if (transform.position.y <= -1500) {
             In += 1;
+        }
+
+        if (transform.position.y >= 1900 || transform.position.y <= -1500)
+        {         
             Destroy(gameObject);
         }
+        
     }
 
     void OnTriggerEnter2D(Collider2D other)
