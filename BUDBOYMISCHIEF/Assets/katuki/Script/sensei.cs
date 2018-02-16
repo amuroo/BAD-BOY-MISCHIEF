@@ -18,7 +18,6 @@ public class sensei : MonoBehaviour
     private int recastRan = 0;
     public AudioClip Damage;
     public AudioClip Gum;
-    public AudioClip dog;
     public int teacherscore;
     public int ptteacherrscore;
     public int scienceTeacherscore;
@@ -139,7 +138,7 @@ public class sensei : MonoBehaviour
         else if (other.gameObject.tag == "Dog" && this.gameObject.tag != "ScienceTeacher")
         {
             Dog = true;
-            GetComponent<AudioSource>().PlayOneShot(dog);
+           
             anim.SetBool("nige", true);
             xx = speed * -1 * 1.5f;
             Scorejudge();

@@ -15,12 +15,12 @@ public class stageselect : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        /*if (Input.GetButtonDown("Fire2"))
+        if (Input.GetButtonDown("Fire2"))
         {
             PlayerPrefs.SetInt("ClearStage", 0);
             x = 0;
             Debug.Log("RESET CLER STAGE");
-        }*/
+        }
 	}
 
     public void Stage1()

@@ -207,8 +207,7 @@ MonoBehaviour:
   speed: 1.5
   xx: 0
   Damage: {fileID: 8300000, guid: 9246082d25942264f9c552c02e3d2e63, type: 3}
-  Gum: {fileID: 0}
-  dog: {fileID: 8300000, guid: 6103dd1bf3174d84e8eb3ae1e08fe0f9, type: 3}
+  Gum: {fileID: 8300000, guid: da94371cd9db9694895af64d2c606170, type: 3}
   teacherscore: 10
   ptteacherrscore: 20
   scienceTeacherscore: 30
