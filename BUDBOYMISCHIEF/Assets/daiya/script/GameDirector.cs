@@ -21,6 +21,7 @@ public class GameDirector : MonoBehaviour {
         sensei.TeacherD = 0;
         sensei.TeacherD = 0;
         sensei.TeacherD = 0;
+        sensei.In = 0;
 
         clearstage = SceneManager.GetActiveScene().name;
     }

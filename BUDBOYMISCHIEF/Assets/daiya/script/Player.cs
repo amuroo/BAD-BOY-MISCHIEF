@@ -26,6 +26,8 @@ public class Player : MonoBehaviour {
     void Start () {
         gumflag = false;
         bakutikuflag = false;
+        dogflag = false;
+        coinflag = false;
 
         gumtime = 0;
         bakutikutime = 0;
@@ -75,10 +77,17 @@ public class Player : MonoBehaviour {
 
 
     void ItemTimer() {
-        gumtime -= Time.deltaTime;
-        bakutikutime -= Time.deltaTime;
-        dogtime -= Time.deltaTime;
-        cointime -= Time.deltaTime;
+        if (gumtime > 0) 
+            gumtime -= Time.deltaTime;
+        
+        if (gumtime > 0)
+            bakutikutime -= Time.deltaTime;
+
+        if (gumtime > 0)
+            dogtime -= Time.deltaTime;
+
+        if (gumtime > 0)
+            cointime -= Time.deltaTime;
     }
 
     public void Gum() {

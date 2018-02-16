@@ -914,6 +914,11 @@ Prefab:
     - {fileID: 114886984364458966, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1534425334 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1760365532810266, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1506475475}
 --- !u!1 &1603873153
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,7 +978,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d613db32917017c4d95fe39c8574702f, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1136,14 +1141,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a6d8c8215f6a86439629f6f42b7c43c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gum: {fileID: 0}
+  gum: {fileID: 1534425334}
   bakutiku: {fileID: 1296819969008620, guid: 253c2aa806272f34c9b78f88b2200c6b, type: 2}
   dog: {fileID: 1235479682791452, guid: e6c095a77e02ded4d9b908390b451a49, type: 2}
   coin: {fileID: 1575280115183544, guid: 1fd67813d166d6b4ab4496a97cb23b2e, type: 2}
   gumtime: 0
-  bakutikutime: 2
-  dogtime: 2
-  cointime: 2
+  bakutikutime: 0
+  dogtime: 0
+  cointime: 0
 --- !u!224 &2134043381 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224338240641567516, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
