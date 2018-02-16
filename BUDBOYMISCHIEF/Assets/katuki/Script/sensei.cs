@@ -111,7 +111,7 @@ public class sensei : MonoBehaviour
 
             }
         }
-        if(transform.position.y >= 1500 || transform.position.y <= -1500)
+        if(transform.position.y >= 1900 || transform.position.y <= -1500)
         {
             In += 1;
             Destroy(gameObject);

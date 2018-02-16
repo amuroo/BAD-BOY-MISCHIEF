@@ -69,6 +69,5 @@ public class ItemTime : MonoBehaviour {
         if (playercs.gumtime == 5.0f) {
             UIobj.fillAmount = 1.0f;
         }
-
     }
 }
