@@ -19,10 +19,10 @@ public class Result : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        GameDirector.score -= sensei.In * 10;
         EvaCal();
 
         Pop.SetActive(false);
-
         
         Score.text = GameDirector.score.ToString();
         

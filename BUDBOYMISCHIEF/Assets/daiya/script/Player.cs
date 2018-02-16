@@ -20,6 +20,8 @@ public class Player : MonoBehaviour {
     public float dogtime;
     public float cointime;
 
+   
+
     // Use this for initialization
     void Start () {
         gumflag = false;
@@ -80,6 +82,7 @@ public class Player : MonoBehaviour {
     }
 
     public void Gum() {
+        GetComponent<AudioSource>().Play();
         gumflag = true;
         bakutikuflag = false;
         dogflag = false;
@@ -87,6 +90,7 @@ public class Player : MonoBehaviour {
     }
 
     public void Bakutiku() {
+        GetComponent<AudioSource>().Play();
         bakutikuflag = true;
         gumflag = false;
         dogflag = false;
@@ -94,6 +98,7 @@ public class Player : MonoBehaviour {
     }
 
     public void Dog() {
+        GetComponent<AudioSource>().Play();
         dogflag = true;
         gumflag = false;
         bakutikuflag = false;
@@ -101,6 +106,7 @@ public class Player : MonoBehaviour {
     }
 
     public void Coin() {
+        GetComponent<AudioSource>().Play();
         coinflag = true;
         gumflag = false;
         bakutikuflag = false;

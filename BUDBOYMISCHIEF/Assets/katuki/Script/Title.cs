@@ -27,13 +27,13 @@ public class Title : MonoBehaviour {
 
   private void GoScene()
     {
-        //SceneManager.LoadScene("hogehoge");
-        Debug.Log("ToStart");
+        SceneManager.LoadScene("StageSelect");
+        //Debug.Log("ToStart");
     }
 
    private void GoTutorial()
     {
-        //SceneManager.LoadScene("hogehoge");
-        Debug.Log("ToTutorial");
+        SceneManager.LoadScene("Tutorial");
+        //Debug.Log("ToTutorial");
     }
 }
