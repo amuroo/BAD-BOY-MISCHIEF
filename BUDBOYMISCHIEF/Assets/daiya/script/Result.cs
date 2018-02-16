@@ -17,10 +17,20 @@ public class Result : MonoBehaviour {
     public Text In;
     public GameObject Pop;
 
+    //追加　評価の星
+    public GameObject eva_star0;
+    public GameObject eva_star1;
+    public GameObject eva_star2;
+
     // Use this for initialization
     void Start () {
         GameDirector.score -= sensei.In * 10;
         EvaCal();
+
+        //追加
+        eva_star0.SetActive(false);
+        eva_star1.SetActive(false);
+        eva_star2.SetActive(false);
 
         Pop.SetActive(false);
         
@@ -47,60 +57,105 @@ public class Result : MonoBehaviour {
             case "Stage1":               
                 if (GameDirector.score >= 100) {
                     evaluation = "星3つ";
+
+                    eva_star0.SetActive(true);
+                    eva_star1.SetActive(true);
+                    eva_star2.SetActive(true);
                 }
                 else if (GameDirector.score >= 50) {
                     evaluation = "星2つ";
+
+                    eva_star0.SetActive(true);
+                    eva_star1.SetActive(true);
                 }
                 else if (GameDirector.score < 50) {
                     evaluation = "星1つ";
+
+                    eva_star0.SetActive(true);
                 }
                 break;
 
             case "Stage2":
                 if (GameDirector.score >= 150) {
                     evaluation = "星3つ";
+
+                    eva_star0.SetActive(true);
+                    eva_star1.SetActive(true);
+                    eva_star2.SetActive(true);
                 }
                 else if (GameDirector.score >= 100) {
                     evaluation = "星2つ";
+
+                    eva_star0.SetActive(true);
+                    eva_star1.SetActive(true);
                 }
                 else if (GameDirector.score < 100) {
                     evaluation = "星1つ";
+
+                    eva_star0.SetActive(true);
                 }
                 break;
 
             case "Stage3":
                 if (GameDirector.score >= 150) {
                     evaluation = "星3つ";
+
+                    eva_star0.SetActive(true);
+                    eva_star1.SetActive(true);
+                    eva_star2.SetActive(true);
                 }
                 else if (GameDirector.score >= 100) {
                     evaluation = "星2つ";
+
+                    eva_star0.SetActive(true);
+                    eva_star1.SetActive(true);
                 }
                 else if (GameDirector.score < 100) {
                     evaluation = "星1つ";
+
+                    eva_star0.SetActive(true);
                 }
                 break;
 
             case "Stage4":
                 if (GameDirector.score >= 180) {
                     evaluation = "星3つ";
+
+                    eva_star0.SetActive(true);
+                    eva_star1.SetActive(true);
+                    eva_star2.SetActive(true);
                 }
                 else if (GameDirector.score >= 130) {
                     evaluation = "星2つ";
+
+                    eva_star0.SetActive(true);
+                    eva_star1.SetActive(true);
                 }
                 else if (GameDirector.score < 130) {
                     evaluation = "星1つ";
+
+                    eva_star0.SetActive(true);
                 }
                 break;
 
             case "Stage5":
                 if (GameDirector.score >= 200) {
                     evaluation = "星3つ";
+
+                    eva_star0.SetActive(true);
+                    eva_star1.SetActive(true);
+                    eva_star2.SetActive(true);
                 }
                 else if (GameDirector.score >= 150) {
                     evaluation = "星2つ";
+
+                    eva_star0.SetActive(true);
+                    eva_star1.SetActive(true);
                 }
                 else if (GameDirector.score < 150) {
                     evaluation = "星1つ";
+
+                    eva_star0.SetActive(true);
                 }
                 break;
         }
