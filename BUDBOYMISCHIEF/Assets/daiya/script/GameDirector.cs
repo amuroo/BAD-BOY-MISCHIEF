@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 
 public class GameDirector : MonoBehaviour {
-    private float time = 60.0f;
+    private float time = 10.0f;
     public Text timeText;
     public static int score = 0;
     public Text scoretext;
