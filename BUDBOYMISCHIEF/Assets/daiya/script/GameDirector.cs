@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 
 public class GameDirector : MonoBehaviour {
-    private float time = 10.0f;
+    public float gametime = 60.0f;
     public Text timeText;
     public static int score = 0;
     public Text scoretext;
@@ -26,13 +26,13 @@ public class GameDirector : MonoBehaviour {
         clearstage = SceneManager.GetActiveScene().name;
     }
     void Update() {
-        time -= Time.deltaTime;
-        timeText.text = time.ToString("F1");
+        gametime -= Time.deltaTime;
+        timeText.text = gametime.ToString("F1");
 
         scoretext.text = score.ToString();
 
-        if (time < 0) {
-            time = 0;
+        if (gametime < 0) {
+            gametime = 0;
             
             ClearStage(clearstage);
             SceneManager.LoadScene("Result");
