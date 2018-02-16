@@ -52,22 +52,22 @@ public class Player : MonoBehaviour {
                 if (ScreenPoint.y >= -600) {
                     if (gumflag && gumtime <= 0) {
                         Instantiate(gum, ScreenPoint, Quaternion.identity);
-                        gumtime = 0;
+                       
                         gumtime = 2.0f;
                     }
                     else if (bakutikuflag && bakutikutime <= 0) {
                         Instantiate(bakutiku, ScreenPoint, Quaternion.identity);
-                        bakutikutime = 0;
+                       
                         bakutikutime = 2.0f;
                     }
                     else if (dogflag && dogtime <= 0) {
                         Instantiate(dog, ScreenPoint, Quaternion.identity);
-                        dogtime = 0;
+                        
                         dogtime = 5.0f;
                     }
                     else if (coinflag && cointime <= 0) {
                         Instantiate(coin, ScreenPoint, Quaternion.identity);
-                        cointime = 0;
+
                         cointime = 5.0f;
                     }
                 }
