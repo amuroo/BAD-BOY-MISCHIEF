@@ -33,8 +33,8 @@ public class Dog : MonoBehaviour {
     {
         if(other.gameObject.tag == "ScienceTeacher")
         {
-            speed = -1.5f;
-
+            speed = 1.5f;
+            transform.Rotate(new Vector3(0, 0, 180));
             sennsei1 = other.gameObject;
         }
     }

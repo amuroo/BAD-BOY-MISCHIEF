@@ -125,6 +125,7 @@ public class sensei : MonoBehaviour
             GetComponent<AudioSource>().PlayOneShot(Damage);
             xx = -speed * 1.5f;
             anim.SetBool("nige", true);
+            stan = false;
             Scorejudge();
         }
         else if (other.gameObject.tag == "Gum")
