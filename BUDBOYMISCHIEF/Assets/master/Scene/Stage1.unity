@@ -654,6 +654,26 @@ Prefab:
       propertyPath: m_Name
       value: 'Canvas '
       objectReference: {fileID: 0}
+    - target: {fileID: 114457497472762086, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114457497472762086, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114457497472762086, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212832008200096318, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b, type: 2}
   m_IsPrefabParent: 0
