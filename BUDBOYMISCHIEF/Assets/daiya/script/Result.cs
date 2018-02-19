@@ -57,96 +57,93 @@ public class Result : MonoBehaviour {
         switch (GameDirector.clearstage) {
             case "Stage1":               
                 if (GameDirector.score >= 100) {
-
-
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                     eva_star2.SetActive(true);
                 }
                 else if (GameDirector.score >= 50) {
-
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                 }
-                else if (GameDirector.score < 50) {
-                    Debug.Log("ok");
+                else if (GameDirector.score >= 30) {        
                     eva_star0.SetActive(true);
                 }
+                else if (GameDirector.score < 30) {   
+                }
+
                 break;
 
             case "Stage2":
                 if (GameDirector.score >= 150) {
-
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                     eva_star2.SetActive(true);
-                }
+                } 
                 else if (GameDirector.score >= 100) {
-
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                 }
-                else if (GameDirector.score < 100) {
-
+                else if (GameDirector.score >= 50) {
                     eva_star0.SetActive(true);
                 }
+                else if (GameDirector.score < 50) {
+                }
+
                 break;
 
             case "Stage3":
                 if (GameDirector.score >= 150) {
-
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                     eva_star2.SetActive(true);
                 }
                 else if (GameDirector.score >= 100) {
-
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                 }
-                else if (GameDirector.score < 100) {
-
+                else if (GameDirector.score >= 50) {
                     eva_star0.SetActive(true);
+                }
+                else if (GameDirector.score < 50) {                    
                 }
                 break;
 
             case "Stage4":
                 if (GameDirector.score >= 180) {
-
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                     eva_star2.SetActive(true);
                 }
                 else if (GameDirector.score >= 130) {
-
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                 }
-                else if (GameDirector.score < 130) {
-
+                else if (GameDirector.score >= 80) {
                     eva_star0.SetActive(true);
                 }
+                else if (GameDirector.score < 80) {
+                }
+
                 break;
 
             case "Stage5":
                 if (GameDirector.score >= 200) {
-
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                     eva_star2.SetActive(true);
                 }
                 else if (GameDirector.score >= 150) {
-
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                 }
-                else if (GameDirector.score < 150) {
-
+                else if (GameDirector.score >= 100) {
                     eva_star0.SetActive(true);
                 }
+                else if (GameDirector.score < 50) {
+                }
+
                 break;
         }
-
     }
 
     public void Gotitle() {
