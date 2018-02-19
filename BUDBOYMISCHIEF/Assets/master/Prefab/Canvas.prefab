@@ -266,6 +266,7 @@ GameObject:
   - component: {fileID: 4459100571167322}
   - component: {fileID: 114047047530622842}
   - component: {fileID: 114675433681934512}
+  - component: {fileID: 114982969797033342}
   m_Layer: 5
   m_Name: EventSystem
   m_TagString: Untagged
@@ -344,7 +345,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: time
+  m_Text: 29.3
 --- !u!114 &114017656199652146
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -945,7 +946,18 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: score
+  m_Text: 0
+--- !u!114 &114982969797033342
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1940819244485412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1327945023, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212368884477550506
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -1023,7 +1035,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c41b49d1cf11ac447a407b9cd26675fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1118,7 +1130,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &224022943799940550
 RectTransform:
