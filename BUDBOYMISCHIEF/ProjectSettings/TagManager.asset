@@ -3,7 +3,22 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Bakuchiku
+  - Dog
+  - kane
+  - GameDirector
+  - Teacher
+  - PTTeacher
+  - HeadTeacher
+  - ScienceTeacher
+  - Undefined
+  - kyoutou
+  - GumButton
+  - Gum
+  - DogButton
+  - BakutikuButton
+  - CoinButton
   layers:
   - Default
   - TransparentFX
