@@ -53,7 +53,7 @@ public class Player : MonoBehaviour {
     void ScreenTouch() {
         if (Input.touchCount > 0) {
            
-            if (Input.GetTouch(0).phase == TouchPhase.Began) {
+            //if (Input.GetTouch(0).phase == TouchPhase.Began) {
                 Vector3 ScreenPoint = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
                 ScreenPoint.z = 1.0f;
                 //print(ScreenPoint);
@@ -78,7 +78,7 @@ public class Player : MonoBehaviour {
                         Instantiate(coin, ScreenPoint, Quaternion.identity);
 
                         cointime = 5.0f;
-                    }
+                    //}
                 }
             }
         }
