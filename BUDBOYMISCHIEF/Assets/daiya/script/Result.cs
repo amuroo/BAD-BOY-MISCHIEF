@@ -22,22 +22,24 @@ public class Result : MonoBehaviour {
     public GameObject eva_star1;
     public GameObject eva_star2;
 
+    private float time;
+
     // Use this for initialization
     void Start () {
         GameDirector.score -= sensei.In * 10;
         
-
         //追加
         eva_star0.SetActive(false);
         eva_star1.SetActive(false);
         eva_star2.SetActive(false);
-        EvaCal();
 
         Pop.SetActive(false);
-        
+
+        EvaCal();
         Score.text = GameDirector.score.ToString();
+
         
-        evatext.text = evaluation;
+        //evatext.text = evaluation;
 
         Teacher.text = "× " + sensei.TeacherD.ToString();
         PTTeacher.text = "× " + sensei.PTTeacherD.ToString();
@@ -48,9 +50,11 @@ public class Result : MonoBehaviour {
     }
 
     void Update() {
-        if(Input.touchCount > 0) {
+        time += Time.deltaTime;
+        if (Input.touchCount > 0 && time >= 3.0f) {
             Pop.SetActive(true);
         }
+       
     }
 
     public void EvaCal() {

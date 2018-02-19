@@ -17,10 +17,10 @@ public class GameDirector : MonoBehaviour {
         score = 0;
         clearstage = null;
         sensei.TeacherD = 0;
-        sensei.TeacherD = 0;
-        sensei.TeacherD = 0;
-        sensei.TeacherD = 0;
-        sensei.TeacherD = 0;
+        sensei.PTTeacherD = 0;
+        sensei.ScienceTeacherD = 0;
+        sensei.kyoutouD = 0;
+        sensei.HeadTeacherD = 0;
         sensei.In = 0;
 
         clearstage = SceneManager.GetActiveScene().name;
