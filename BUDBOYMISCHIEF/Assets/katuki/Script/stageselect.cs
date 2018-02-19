@@ -4,11 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class stageselect : MonoBehaviour {
-   
+public class stageselect : MonoBehaviour {  
+  
     private int x;
 	// Use this for initialization
 	void Start () {
+
         x = PlayerPrefs.GetInt("ClearStage");
         print(x);
 	}
@@ -24,7 +25,7 @@ public class stageselect : MonoBehaviour {
 	}
 
     public void Stage1()
-    {
+    {      
         SceneManager.LoadScene("Stage1");
         //Debug.Log("GO to Stage1");
     }

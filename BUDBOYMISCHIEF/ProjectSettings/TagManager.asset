@@ -19,6 +19,7 @@ TagManager:
   - DogButton
   - BakutikuButton
   - CoinButton
+  - BGM
   layers:
   - Default
   - TransparentFX
