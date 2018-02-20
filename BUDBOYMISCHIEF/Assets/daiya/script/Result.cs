@@ -51,7 +51,7 @@ public class Result : MonoBehaviour {
 
     void Update() {
         time += Time.deltaTime;
-        if (Input.touchCount > 0 && time >= 3.0f) {
+        if (Input.touchCount > 0 && time >= 2.0f) {
             Pop.SetActive(true);
         }
        
@@ -59,91 +59,106 @@ public class Result : MonoBehaviour {
 
     public void EvaCal() {
         switch (GameDirector.clearstage) {
-            case "Stage1":               
-                if (GameDirector.score >= 100) {
+            case "Stage1":
+                if(PlayerPrefs.GetInt("HighScore1")<GameDirector.score)
+                PlayerPrefs.SetInt("HighScore1", GameDirector.score);
+
+                if (sensei.In == 0) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                     eva_star2.SetActive(true);
                 }
-                else if (GameDirector.score >= 50) {
+                else if (sensei.In <= 50) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                 }
-                else if (GameDirector.score >= 30) {        
+                else if (sensei.In >= 30) {        
                     eva_star0.SetActive(true);
                 }
-                else if (GameDirector.score < 30) {   
+                else if (sensei.In < 30) {   
                 }
 
                 break;
 
             case "Stage2":
-                if (GameDirector.score >= 150) {
+                if (PlayerPrefs.GetInt("HighScore2") < GameDirector.score)
+                    PlayerPrefs.SetInt("HighScore2",GameDirector.score);
+
+                if (sensei.In >= 150) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                     eva_star2.SetActive(true);
                 } 
-                else if (GameDirector.score >= 100) {
+                else if (sensei.In >= 100) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                 }
-                else if (GameDirector.score >= 50) {
+                else if (sensei.In >= 50) {
                     eva_star0.SetActive(true);
                 }
-                else if (GameDirector.score < 50) {
+                else if (sensei.In < 50) {
                 }
 
                 break;
 
             case "Stage3":
-                if (GameDirector.score >= 150) {
+                if (PlayerPrefs.GetInt("HighScore3") < GameDirector.score)
+                    PlayerPrefs.SetInt("HighScore3", GameDirector.score);
+
+                if (sensei.In >= 150) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                     eva_star2.SetActive(true);
                 }
-                else if (GameDirector.score >= 100) {
+                else if (sensei.In >= 100) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                 }
-                else if (GameDirector.score >= 50) {
+                else if (sensei.In >= 50) {
                     eva_star0.SetActive(true);
                 }
-                else if (GameDirector.score < 50) {                    
+                else if (sensei.In < 50) {                    
                 }
                 break;
 
             case "Stage4":
-                if (GameDirector.score >= 180) {
+                if (PlayerPrefs.GetInt("HighScore4") < GameDirector.score)
+                    PlayerPrefs.SetInt("HighScore4", GameDirector.score);
+
+                if (sensei.In >= 180) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                     eva_star2.SetActive(true);
                 }
-                else if (GameDirector.score >= 130) {
+                else if (sensei.In >= 130) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                 }
-                else if (GameDirector.score >= 80) {
+                else if (sensei.In >= 80) {
                     eva_star0.SetActive(true);
                 }
-                else if (GameDirector.score < 80) {
+                else if (sensei.In < 80) {
                 }
 
                 break;
 
             case "Stage5":
-                if (GameDirector.score >= 200) {
+                if (PlayerPrefs.GetInt("HighScore5") < GameDirector.score)
+                    PlayerPrefs.SetInt("HighScore5", GameDirector.score);
+
+                if (sensei.In >= 200) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                     eva_star2.SetActive(true);
                 }
-                else if (GameDirector.score >= 150) {
+                else if (sensei.In >= 150) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                 }
-                else if (GameDirector.score >= 100) {
+                else if (sensei.In >= 100) {
                     eva_star0.SetActive(true);
                 }
-                else if (GameDirector.score < 50) {
+                else if (sensei.In < 50) {
                 }
 
                 break;
