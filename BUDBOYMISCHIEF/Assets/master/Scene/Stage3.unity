@@ -772,7 +772,7 @@ MonoBehaviour:
   - {fileID: 1948324033889986, guid: 74c668dbd0d5d7f40ac08af5f5544fe0, type: 2}
   time: 4
   plus: 0
-  div: 27
+  div: 22
   par: 320000005000000064000000
   Gpos:
   - {x: -405, y: 1000}
