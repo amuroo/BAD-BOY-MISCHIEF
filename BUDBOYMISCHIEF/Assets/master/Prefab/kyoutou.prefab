@@ -121,11 +121,11 @@ MonoBehaviour:
   xx: 0
   Damage: {fileID: 8300000, guid: 9246082d25942264f9c552c02e3d2e63, type: 3}
   Gum: {fileID: 8300000, guid: da94371cd9db9694895af64d2c606170, type: 3}
-  teacherscore: 5
+  teacherscore: 10
   ptteacherrscore: 10
-  scienceTeacherscore: 15
-  kyoutouscore: 15
-  headteacherscore: 20
+  scienceTeacherscore: 20
+  kyoutouscore: 20
+  headteacherscore: 10
 --- !u!212 &212551763972699064
 SpriteRenderer:
   m_ObjectHideFlags: 1

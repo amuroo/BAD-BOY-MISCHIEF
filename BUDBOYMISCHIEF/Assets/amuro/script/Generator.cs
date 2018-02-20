@@ -90,7 +90,7 @@ public class Generator : MonoBehaviour {
             time -= (interval /= div);
         }
 
-        if(count > 55.0f)
+        if(count > 57.0f)
         {
             StopCoroutine("Generate");
             plus = false;
