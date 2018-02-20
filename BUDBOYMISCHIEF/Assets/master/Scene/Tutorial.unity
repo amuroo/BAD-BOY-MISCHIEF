@@ -1754,7 +1754,7 @@ GameObject:
   - component: {fileID: 1581095534}
   - component: {fileID: 1581095533}
   m_Layer: 5
-  m_Name: "\u3082\u304F\u3066\u304D"
+  m_Name: purpose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2181,7 +2181,7 @@ GameObject:
   - component: {fileID: 1974736045}
   - component: {fileID: 1974736044}
   m_Layer: 5
-  m_Name: "\u3042\u305D\u3073\u304B\u305F"
+  m_Name: Tutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

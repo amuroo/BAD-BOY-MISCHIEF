@@ -578,9 +578,9 @@ MonoBehaviour:
   - {fileID: 1342980951003624, guid: ff81085cc4630e549b364dbee14ca004, type: 2}
   - {fileID: 1869754301161336, guid: 9f1b6662477f6ae438c642ea49866871, type: 2}
   - {fileID: 1948324033889986, guid: 74c668dbd0d5d7f40ac08af5f5544fe0, type: 2}
-  time: 5
+  time: 4
   plus: 0
-  div: 30
+  div: 25
   par: 320000005000000064000000
   Gpos:
   - {x: -405, y: 1000}
@@ -672,7 +672,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
