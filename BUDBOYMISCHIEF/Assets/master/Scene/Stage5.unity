@@ -660,9 +660,9 @@ MonoBehaviour:
   - {fileID: 1948324033889986, guid: 74c668dbd0d5d7f40ac08af5f5544fe0, type: 2}
   - {fileID: 1478568950093380, guid: 7df89500686bfb843ac17056bae7fce2, type: 2}
   - {fileID: 1336101940919724, guid: 151c5289100becf4ba6bb51c2a5a0cc5, type: 2}
-  time: 4
+  time: 3
   plus: 0
-  div: 21
+  div: 30
   par: 1e00000032000000460000005a00000064000000
   Gpos:
   - {x: -405, y: 1000}
