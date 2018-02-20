@@ -31,6 +31,12 @@ public class stageselect : MonoBehaviour {
 	void Update () {
         if (Input.GetButtonDown("Fire2"))
         {
+            for (int i = 1; i <= 5; i++)
+            {
+                PlayerPrefs.SetInt("HighScore" + i, 0);
+                stage[i - 1].text = "0";
+            }
+
             PlayerPrefs.SetInt("ClearStage", 0);
             x = 0;
             Debug.Log("RESET CLER STAGE");
