@@ -34,10 +34,10 @@ public class ItemTime : MonoBehaviour {
 
     void BakutikuCal() {
         if (UIobj.fillAmount > 0) {
-            UIobj.fillAmount -= 1.0f / 2.0f * Time.deltaTime;
+            UIobj.fillAmount -= 1.0f / 3.0f * Time.deltaTime;
         }
 
-        if (playercs.bakutikutime == 2.0f) {
+        if (playercs.bakutikutime == 3.0f) {
             UIobj.fillAmount = 1.0f;
         }
     }

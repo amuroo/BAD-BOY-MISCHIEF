@@ -48,7 +48,7 @@ public class sensei : MonoBehaviour
         if (transform.position.y == -900 && this.gameObject.tag == "kyoutou")
         {
             playersc.gumtime = 2;
-            playersc.bakutikutime = 2;
+            playersc.bakutikutime = 2.5f;
             playersc.dogtime = 5;
             playersc.cointime = 5;
 

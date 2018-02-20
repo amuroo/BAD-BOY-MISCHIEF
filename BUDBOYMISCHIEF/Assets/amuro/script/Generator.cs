@@ -18,6 +18,7 @@ public class Generator : MonoBehaviour {
     public int e2;
     public int e3;
     public int e4;*/
+    public int all;
 
 
     //湧きポジの指定
@@ -35,6 +36,8 @@ public class Generator : MonoBehaviour {
     {
         while (true)
         {
+            all++;
+            print(all);
             //print(e0 + "," + e1 + "," + e2 + "," + e3 + "," + e4);
             //配列の中からランダムで生成
             randomNum = Random.Range(1,101);
@@ -87,7 +90,7 @@ public class Generator : MonoBehaviour {
             time -= (interval /= div);
         }
 
-        if(count > 60f)
+        if(count > 55.0f)
         {
             StopCoroutine("Generate");
             plus = false;

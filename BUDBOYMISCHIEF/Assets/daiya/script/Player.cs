@@ -67,7 +67,7 @@ public class Player : MonoBehaviour {
                 else if (bakutikuflag && bakutikutime <= 0) {
                     Instantiate(bakutiku, ScreenPoint, Quaternion.identity);
 
-                    bakutikutime = 2.0f;
+                    bakutikutime = 3.0f;
                 }
                 else if (dogflag && dogtime <= 0) {
                     Instantiate(dog, ScreenPoint, Quaternion.identity);

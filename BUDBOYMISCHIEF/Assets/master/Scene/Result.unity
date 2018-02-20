@@ -1983,6 +1983,7 @@ MonoBehaviour:
   HeadTeacher: {fileID: 1555453303}
   In: {fileID: 929014573}
   Pop: {fileID: 767660083}
+  NextButton: {fileID: 446467444}
   eva_star0: {fileID: 28367714}
   eva_star1: {fileID: 1468210264}
   eva_star2: {fileID: 805262005}

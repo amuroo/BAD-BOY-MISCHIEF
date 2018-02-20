@@ -330,6 +330,11 @@ Prefab:
       propertyPath: scoretext
       value: 
       objectReference: {fileID: 1083939633}
+    - target: {fileID: 114547169992682334, guid: a365c52d567ec454fb53351992293d4c,
+        type: 2}
+      propertyPath: gametime
+      value: 60
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a365c52d567ec454fb53351992293d4c, type: 2}
   m_IsPrefabParent: 0

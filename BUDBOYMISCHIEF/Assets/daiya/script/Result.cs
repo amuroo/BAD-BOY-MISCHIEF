@@ -16,6 +16,7 @@ public class Result : MonoBehaviour {
     public Text HeadTeacher;
     public Text In;
     public GameObject Pop;
+    public GameObject NextButton;
 
     //追加　評価の星
     public GameObject eva_star0;
@@ -26,7 +27,10 @@ public class Result : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        GameDirector.score -= sensei.In * 10;
+        /*GameDirector.score -= sensei.In * 10;
+        if (GameDirector.score < 0) {
+            GameDirector.score = 0;
+        }*/
         
         //追加
         eva_star0.SetActive(false);
@@ -38,9 +42,6 @@ public class Result : MonoBehaviour {
         EvaCal();
         Score.text = GameDirector.score.ToString();
 
-        
-        //evatext.text = evaluation;
-
         Teacher.text = "× " + sensei.TeacherD.ToString();
         PTTeacher.text = "× " + sensei.PTTeacherD.ToString();
         ScienceTeacher.text = "× " + sensei.ScienceTeacherD.ToString();
@@ -51,7 +52,11 @@ public class Result : MonoBehaviour {
 
     void Update() {
         time += Time.deltaTime;
-        if (Input.touchCount > 0 && time >= 2.0f) {
+        if (GameDirector.clearstage=="Stage5" && Input.touchCount > 0 && time >= 2.0f) {
+            Destroy(NextButton);
+            Pop.SetActive(true);
+        }
+        else if (Input.touchCount > 0 && time >= 2.0f) {
             Pop.SetActive(true);
         }
        
