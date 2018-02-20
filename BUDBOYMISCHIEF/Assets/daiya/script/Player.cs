@@ -52,36 +52,36 @@ public class Player : MonoBehaviour {
 
     void ScreenTouch() {
         if (Input.touchCount > 0) {
-           
+
             //if (Input.GetTouch(0).phase == TouchPhase.Began) {
-                Vector3 ScreenPoint = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
-                ScreenPoint.z = 1.0f;
-                //print(ScreenPoint);
+            Vector3 ScreenPoint = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+            ScreenPoint.z = 1.0f;
+            //print(ScreenPoint);
 
-                if (ScreenPoint.y >= -600 ) {
-                    if (gumflag && gumtime <= 0) {
-                        Instantiate(gum, ScreenPoint, Quaternion.identity);
-                       
-                        gumtime = 2.0f;
-                    }
-                    else if (bakutikuflag && bakutikutime <= 0) {
-                        Instantiate(bakutiku, ScreenPoint, Quaternion.identity);
-                       
-                        bakutikutime = 2.0f;
-                    }
-                    else if (dogflag && dogtime <= 0) {
-                        Instantiate(dog, ScreenPoint, Quaternion.identity);
-                        
-                        dogtime = 5.0f;
-                    }
-                    else if (coinflag && cointime <= 0) {
-                        Instantiate(coin, ScreenPoint, Quaternion.identity);
+            if (ScreenPoint.y >= -600 && ScreenPoint.y <= 650) {
+                if (gumflag && gumtime <= 0) {
+                    Instantiate(gum, ScreenPoint, Quaternion.identity);
 
-                        cointime = 5.0f;
+                    gumtime = 2.0f;
+                }
+                else if (bakutikuflag && bakutikutime <= 0) {
+                    Instantiate(bakutiku, ScreenPoint, Quaternion.identity);
+
+                    bakutikutime = 2.0f;
+                }
+                else if (dogflag && dogtime <= 0) {
+                    Instantiate(dog, ScreenPoint, Quaternion.identity);
+
+                    dogtime = 5.0f;
+                }
+                else if (coinflag && cointime <= 0) {
+                    Instantiate(coin, ScreenPoint, Quaternion.identity);
+
+                    cointime = 5.0f;
                     //}
                 }
             }
-        }
+        }        
     }
 
 
