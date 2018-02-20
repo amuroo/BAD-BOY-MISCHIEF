@@ -58,7 +58,7 @@ public class Player : MonoBehaviour {
                 ScreenPoint.z = 1.0f;
                 //print(ScreenPoint);
 
-                if (ScreenPoint.y >= -600) {
+                if (ScreenPoint.y >= -600 ) {
                     if (gumflag && gumtime <= 0) {
                         Instantiate(gum, ScreenPoint, Quaternion.identity);
                        
