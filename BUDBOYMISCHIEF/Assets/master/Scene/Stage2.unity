@@ -506,46 +506,26 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 114790487023535848, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 199208858}
-    - target: {fileID: 114790487023535848, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Gum
-      objectReference: {fileID: 0}
-    - target: {fileID: 114515831150133480, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 199208858}
-    - target: {fileID: 114515831150133480, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Bakutiku
-      objectReference: {fileID: 0}
-    - target: {fileID: 114308840083098478, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+    - target: {fileID: 114203873505654340, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 199208858}
     - target: {fileID: 114308840083098478, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
         type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Dog
-      objectReference: {fileID: 0}
-    - target: {fileID: 114203873505654340, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 199208858}
+    - target: {fileID: 114515831150133480, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 199208858}
-    - target: {fileID: 114203873505654340, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+    - target: {fileID: 114790487023535848, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
         type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Coin
-      objectReference: {fileID: 0}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 199208858}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b, type: 2}
   m_IsPrefabParent: 0
@@ -598,9 +578,9 @@ MonoBehaviour:
   - {fileID: 1342980951003624, guid: ff81085cc4630e549b364dbee14ca004, type: 2}
   - {fileID: 1869754301161336, guid: 9f1b6662477f6ae438c642ea49866871, type: 2}
   - {fileID: 1948324033889986, guid: 74c668dbd0d5d7f40ac08af5f5544fe0, type: 2}
-  time: 5
+  time: 4
   plus: 0
-  div: 30
+  div: 25
   par: 320000005000000064000000
   Gpos:
   - {x: -405, y: 1000}
@@ -692,7 +672,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:

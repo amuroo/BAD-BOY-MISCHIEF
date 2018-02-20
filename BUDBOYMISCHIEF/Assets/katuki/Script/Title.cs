@@ -4,9 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Title : MonoBehaviour {
+    public AudioClip select;
+    private AudioSource audiosource;
 
 	// Use this for initialization
 	void Start () {
+        audiosource = GetComponent<AudioSource>();
 		
 	}
 	
@@ -17,11 +20,16 @@ public class Title : MonoBehaviour {
 
     public void ToStart()
     {
+
+        audiosource.clip = select;
+        audiosource.Play();
         Invoke("GoScene", 1);
     }
 
     public void Tutorial()
     {
+        audiosource.clip = select;
+        audiosource.Play();
         Invoke("GoTutorial", 0.5f);
     }
 

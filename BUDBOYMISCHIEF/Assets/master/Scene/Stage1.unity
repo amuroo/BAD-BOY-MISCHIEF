@@ -635,12 +635,12 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 476684229}
-    - target: {fileID: 114515831150133480, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+    - target: {fileID: 114308840083098478, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 476684229}
-    - target: {fileID: 114308840083098478, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
+    - target: {fileID: 114515831150133480, guid: 16ca0a471cf855e4ba03bcc5e44e4a5b,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -718,6 +718,11 @@ Prefab:
       propertyPath: scoretext
       value: 
       objectReference: {fileID: 1227923985}
+    - target: {fileID: 114547169992682334, guid: a365c52d567ec454fb53351992293d4c,
+        type: 2}
+      propertyPath: gametime
+      value: 60
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a365c52d567ec454fb53351992293d4c, type: 2}
   m_IsPrefabParent: 0
