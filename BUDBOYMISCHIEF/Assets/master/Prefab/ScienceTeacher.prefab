@@ -121,6 +121,7 @@ MonoBehaviour:
   xx: 0
   Damage: {fileID: 8300000, guid: 9246082d25942264f9c552c02e3d2e63, type: 3}
   Gum: {fileID: 8300000, guid: da94371cd9db9694895af64d2c606170, type: 3}
+  recast: {fileID: 8300000, guid: 879034c5a609f334c8193a67c8493287, type: 3}
   teacherscore: 10
   ptteacherrscore: 10
   scienceTeacherscore: 20

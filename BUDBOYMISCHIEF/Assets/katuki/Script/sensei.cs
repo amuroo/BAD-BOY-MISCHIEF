@@ -18,6 +18,7 @@ public class sensei : MonoBehaviour
     private int recastRan = 0;
     public AudioClip Damage;
     public AudioClip Gum;
+    public AudioClip recast;
     public int teacherscore;
     public int ptteacherrscore;
     public int scienceTeacherscore;
@@ -47,6 +48,8 @@ public class sensei : MonoBehaviour
     {
         if (transform.position.y == -900 && this.gameObject.tag == "kyoutou")
         {
+            GetComponent<AudioSource>().PlayOneShot(recast);
+
             playersc.gumtime = 2;
             playersc.bakutikutime = 2.5f;
             playersc.dogtime = 5;

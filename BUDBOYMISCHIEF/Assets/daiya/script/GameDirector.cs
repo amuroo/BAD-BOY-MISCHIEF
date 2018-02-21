@@ -27,9 +27,9 @@ public class GameDirector : MonoBehaviour {
     }
     void Update() {
         gametime -= Time.deltaTime;
-        timeText.text = gametime.ToString("F1");
+        timeText.text = gametime.ToString("F1") + "秒";
 
-        scoretext.text = score.ToString();
+        scoretext.text = score.ToString() + "点";
 
         if (gametime < 0) {
             gametime = 0;

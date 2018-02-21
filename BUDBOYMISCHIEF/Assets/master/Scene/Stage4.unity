@@ -407,7 +407,7 @@ MonoBehaviour:
   - {fileID: 1478568950093380, guid: 7df89500686bfb843ac17056bae7fce2, type: 2}
   time: 2.5
   plus: 0
-  div: 50
+  div: 40
   par: 32000000460000005a00000064000000
   all: 0
   Gpos:
