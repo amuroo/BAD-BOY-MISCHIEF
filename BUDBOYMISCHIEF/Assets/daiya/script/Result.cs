@@ -73,14 +73,14 @@ public class Result : MonoBehaviour {
                     eva_star1.SetActive(true);
                     eva_star2.SetActive(true);
                 }
-                else if (GameDirector.score >= 200) {
+                else if (GameDirector.score >= 180) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                 }
-                else if (GameDirector.score >= 150) {        
+                else if (GameDirector.score >= 130) {        
                     eva_star0.SetActive(true);
                 }
-                else if (GameDirector.score < 150) {   
+                else if (GameDirector.score < 130) {   
                 }
 
                 break;
@@ -94,14 +94,14 @@ public class Result : MonoBehaviour {
                     eva_star1.SetActive(true);
                     eva_star2.SetActive(true);
                 } 
-                else if (GameDirector.score >= 270) {
+                else if (GameDirector.score >= 250) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                 }
-                else if (GameDirector.score >= 220) {
+                else if (GameDirector.score >= 200) {
                     eva_star0.SetActive(true);
                 }
-                else if (GameDirector.score < 220) {
+                else if (GameDirector.score < 200) {
                 }
 
                 break;
@@ -115,14 +115,14 @@ public class Result : MonoBehaviour {
                     eva_star1.SetActive(true);
                     eva_star2.SetActive(true);
                 }
-                else if (GameDirector.score >= 270) {
+                else if (GameDirector.score >= 250) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                 }
-                else if (GameDirector.score >= 220) {
+                else if (GameDirector.score >= 200) {
                     eva_star0.SetActive(true);
                 }
-                else if (GameDirector.score < 220) {                    
+                else if (GameDirector.score < 200) {                    
                 }
                 break;
 
@@ -130,7 +130,7 @@ public class Result : MonoBehaviour {
                 if (PlayerPrefs.GetInt("HighScore4") < GameDirector.score)
                     PlayerPrefs.SetInt("HighScore4", GameDirector.score);
 
-                if (GameDirector.score >= 330) {
+                if (GameDirector.score >= 350) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                     eva_star2.SetActive(true);

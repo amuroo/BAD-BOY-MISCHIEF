@@ -155,7 +155,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -315,6 +315,11 @@ MonoBehaviour:
   plus: 0
   div: 50
   par: 4600000064000000
+  e0: 0
+  e1: 0
+  e2: 0
+  e3: 0
+  e4: 0
   all: 0
   Gpos:
   - {x: -405, y: 1000}

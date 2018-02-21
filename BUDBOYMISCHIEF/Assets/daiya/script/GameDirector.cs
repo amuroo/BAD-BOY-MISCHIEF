@@ -61,9 +61,7 @@ public class GameDirector : MonoBehaviour {
         else if (PlayerPrefs.GetInt("ClearStage") < 4 && stage == "Stage4") {
             PlayerPrefs.SetInt("ClearStage", 4);
         }
-        else if (PlayerPrefs.GetInt("ClearStage") < 5 && stage == "Stage5") {
-            PlayerPrefs.SetInt("ClearStage", 5);
-        }
+      
     }
 
     void GoResult() {

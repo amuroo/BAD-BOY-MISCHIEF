@@ -13,8 +13,14 @@ public class stageselect : MonoBehaviour {
     private int x;
     private string ScoreString;
     private int ScoreInt;
-	// Use this for initialization
-	void Start () {
+
+    public GameObject stege2;
+    public GameObject stege3;
+    public GameObject stege4;
+    public GameObject stege5;
+
+    // Use this for initialization
+    void Start () {
         audiosource = GetComponent<AudioSource>();
         HighScore.SetActive(false);
         x = PlayerPrefs.GetInt("ClearStage");
@@ -29,7 +35,28 @@ public class stageselect : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetButtonDown("Fire2"))
+        if (PlayerPrefs.GetInt("ClearStage") == 1) {
+            stege2.SetActive(true);
+        }
+        else if (PlayerPrefs.GetInt("ClearStage") == 2) {
+            stege2.SetActive(true);
+            stege3.SetActive(true);
+        }
+        else if (PlayerPrefs.GetInt("ClearStage") == 3) {
+            stege2.SetActive(true);
+            stege3.SetActive(true);
+            stege4.SetActive(true);
+        }
+        else if (PlayerPrefs.GetInt("ClearStage") == 4) {
+            stege2.SetActive(true);
+            stege3.SetActive(true);
+            stege4.SetActive(true);
+            stege5.SetActive(true);
+        }
+
+
+
+        /*if (Input.GetButtonDown("Fire2"))
         {
             for (int i = 1; i <= 5; i++)
             {
@@ -40,7 +67,7 @@ public class stageselect : MonoBehaviour {
             PlayerPrefs.SetInt("ClearStage", 0);
             x = 0;
             Debug.Log("RESET CLER STAGE");
-        }
+        }*/
 	}
 
     public void Stage1()
