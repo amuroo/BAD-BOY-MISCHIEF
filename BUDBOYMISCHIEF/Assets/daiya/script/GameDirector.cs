@@ -12,6 +12,9 @@ public class GameDirector : MonoBehaviour {
     public Text scoretext;
     public static string clearstage;
 
+    //public AudioClip finish;
+    //public GameObject MainCamera;
+
 
     void Start() {
         score = 0;
@@ -32,10 +35,12 @@ public class GameDirector : MonoBehaviour {
         scoretext.text = score.ToString() + "点";
 
         if (gametime < 0) {
+            
+            //MainCamera.GetComponent<AudioSource>().PlayOneShot(finish);
             gametime = 0;
             
             ClearStage(clearstage);
-            SceneManager.LoadScene("Result");
+            Invoke("GoResult", 1.5f);
         }
     }
 
@@ -59,5 +64,9 @@ public class GameDirector : MonoBehaviour {
         else if (PlayerPrefs.GetInt("ClearStage") < 5 && stage == "Stage5") {
             PlayerPrefs.SetInt("ClearStage", 5);
         }
+    }
+
+    void GoResult() {
+        SceneManager.LoadScene("Result");
     }
 }

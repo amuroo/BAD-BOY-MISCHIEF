@@ -68,19 +68,19 @@ public class Result : MonoBehaviour {
                 if(PlayerPrefs.GetInt("HighScore1")<GameDirector.score)
                 PlayerPrefs.SetInt("HighScore1", GameDirector.score);
 
-                if (sensei.In == 0) {
+                if (GameDirector.score >=230) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                     eva_star2.SetActive(true);
                 }
-                else if (sensei.In <= 50) {
+                else if (GameDirector.score >= 200) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                 }
-                else if (sensei.In >= 30) {        
+                else if (GameDirector.score >= 150) {        
                     eva_star0.SetActive(true);
                 }
-                else if (sensei.In < 30) {   
+                else if (GameDirector.score < 150) {   
                 }
 
                 break;
@@ -89,19 +89,19 @@ public class Result : MonoBehaviour {
                 if (PlayerPrefs.GetInt("HighScore2") < GameDirector.score)
                     PlayerPrefs.SetInt("HighScore2",GameDirector.score);
 
-                if (sensei.In >= 150) {
+                if (GameDirector.score >= 300) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                     eva_star2.SetActive(true);
                 } 
-                else if (sensei.In >= 100) {
+                else if (GameDirector.score >= 270) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                 }
-                else if (sensei.In >= 50) {
+                else if (GameDirector.score >= 220) {
                     eva_star0.SetActive(true);
                 }
-                else if (sensei.In < 50) {
+                else if (GameDirector.score < 220) {
                 }
 
                 break;
@@ -110,19 +110,19 @@ public class Result : MonoBehaviour {
                 if (PlayerPrefs.GetInt("HighScore3") < GameDirector.score)
                     PlayerPrefs.SetInt("HighScore3", GameDirector.score);
 
-                if (sensei.In >= 150) {
+                if (GameDirector.score >= 300) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                     eva_star2.SetActive(true);
                 }
-                else if (sensei.In >= 100) {
+                else if (GameDirector.score >= 270) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                 }
-                else if (sensei.In >= 50) {
+                else if (GameDirector.score >= 220) {
                     eva_star0.SetActive(true);
                 }
-                else if (sensei.In < 50) {                    
+                else if (GameDirector.score < 220) {                    
                 }
                 break;
 
@@ -130,19 +130,19 @@ public class Result : MonoBehaviour {
                 if (PlayerPrefs.GetInt("HighScore4") < GameDirector.score)
                     PlayerPrefs.SetInt("HighScore4", GameDirector.score);
 
-                if (sensei.In >= 180) {
+                if (GameDirector.score >= 330) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                     eva_star2.SetActive(true);
                 }
-                else if (sensei.In >= 130) {
+                else if (GameDirector.score >= 300) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                 }
-                else if (sensei.In >= 80) {
+                else if (GameDirector.score >= 250) {
                     eva_star0.SetActive(true);
                 }
-                else if (sensei.In < 80) {
+                else if (GameDirector.score < 250) {
                 }
 
                 break;
@@ -151,19 +151,19 @@ public class Result : MonoBehaviour {
                 if (PlayerPrefs.GetInt("HighScore5") < GameDirector.score)
                     PlayerPrefs.SetInt("HighScore5", GameDirector.score);
 
-                if (sensei.In >= 200) {
+                if (GameDirector.score >= 350) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                     eva_star2.SetActive(true);
                 }
-                else if (sensei.In >= 150) {
+                else if (GameDirector.score >= 300) {
                     eva_star0.SetActive(true);
                     eva_star1.SetActive(true);
                 }
-                else if (sensei.In >= 100) {
+                else if (GameDirector.score >= 250) {
                     eva_star0.SetActive(true);
                 }
-                else if (sensei.In < 50) {
+                else if (GameDirector.score < 250) {
                 }
 
                 break;

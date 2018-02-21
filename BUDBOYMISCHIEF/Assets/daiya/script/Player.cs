@@ -26,6 +26,8 @@ public class Player : MonoBehaviour {
     public Sprite dogsprite;
     public Sprite coinsprite;
 
+    GameDirector gd;
+    GameObject gamedirector;
 
 
 
@@ -40,7 +42,9 @@ public class Player : MonoBehaviour {
         bakutikutime = 0;
         dogtime = 0;
         cointime = 0;
-
+        
+        gamedirector = GameObject.FindWithTag("GameDirector");
+        gd = gamedirector.GetComponent<GameDirector>();
         //itemeImg = GetComponent<Image>();
     }
 
@@ -51,7 +55,7 @@ public class Player : MonoBehaviour {
     }
 
     void ScreenTouch() {
-        if (Input.touchCount > 0) {
+        if (Input.touchCount > 0 && gd.gametime > 0) {
 
             //if (Input.GetTouch(0).phase == TouchPhase.Began) {
             Vector3 ScreenPoint = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
