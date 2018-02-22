@@ -36,8 +36,8 @@ public class Generator : MonoBehaviour {
     {
         while (true)
         {
-            all++;
-            print(all);
+            //all++;
+            //print(all);
           
             //配列の中からランダムで生成
             randomNum = Random.Range(1,101);
@@ -46,36 +46,36 @@ public class Generator : MonoBehaviour {
             {
                 Instantiate(enemy[0], Gpos[Random.Range(0, Gpos.Length)], Quaternion.identity);
 
-                e0++;
+                //e0++;
             } else if((randomNum > par[0]) && (randomNum <= par[1]))
             {
                 Instantiate(enemy[1], Gpos[Random.Range(0, Gpos.Length)], Quaternion.identity);
 
-                e1++;
+                //e1++;
 
             }
             else if((randomNum > par[1]) && (randomNum <= par[2]))
             {
                 Instantiate(enemy[2], Gpos[Random.Range(0, Gpos.Length)], Quaternion.identity);
 
-                e2++;
+                //e2++;
 
             }
             else if((randomNum > par[2]) && (randomNum <= par[3]))
             {
                 Instantiate(enemy[3], Gpos[Random.Range(0, Gpos.Length)], Quaternion.identity);
 
-                e3++;
+                //e3++;
 
             }
             else if((randomNum > par[3]) && (randomNum <= par[4]))
             {
                 Instantiate(enemy[4], Gpos[Random.Range(0, Gpos.Length)], Quaternion.identity);
 
-                e4++;
+                //e4++;
 
             }
-            print(e0 + "," + e1 + "," + e2 + "," + e3 + "," + e4);
+            //print(e0 + "," + e1 + "," + e2 + "," + e3 + "," + e4);
 
             yield return new WaitForSecondsRealtime(time);
         }
@@ -91,7 +91,7 @@ public class Generator : MonoBehaviour {
             time -= (interval /= div);
         }
 
-        if(count > 57.0f)
+        if(count > 58.0f)
         {
             StopCoroutine("Generate");
             plus = false;

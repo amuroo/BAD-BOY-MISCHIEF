@@ -40,7 +40,7 @@ public class GameDirector : MonoBehaviour {
             gametime = 0;
             
             ClearStage(clearstage);
-            Invoke("GoResult", 1.5f);
+            Invoke("GoResult", 0.5f);
         }
     }
 

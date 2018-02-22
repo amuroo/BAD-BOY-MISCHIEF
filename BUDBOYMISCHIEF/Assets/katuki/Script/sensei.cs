@@ -188,7 +188,7 @@ public class sensei : MonoBehaviour
             HeadTeacherD += 1;
             gumdirectorsc.AddScore(headteacherscore);
         }
-        Debug.Log("PPPP");
+        //Debug.Log("PPPP");
     }
 
 
