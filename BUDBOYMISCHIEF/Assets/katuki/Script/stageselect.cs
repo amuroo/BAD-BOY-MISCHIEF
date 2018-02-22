@@ -24,7 +24,7 @@ public class stageselect : MonoBehaviour {
         audiosource = GetComponent<AudioSource>();
         HighScore.SetActive(false);
         x = PlayerPrefs.GetInt("ClearStage");
-        //print(x);
+        print(x);
         for(int i = 1; i <= 5; i++)
         {
             ScoreInt = PlayerPrefs.GetInt("HighScore" + i);
