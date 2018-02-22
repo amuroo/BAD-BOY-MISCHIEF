@@ -21,10 +21,12 @@ public class stageselect : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+       
+
         audiosource = GetComponent<AudioSource>();
         HighScore.SetActive(false);
         x = PlayerPrefs.GetInt("ClearStage");
-        print(x);
+        //print(x);
         for(int i = 1; i <= 5; i++)
         {
             ScoreInt = PlayerPrefs.GetInt("HighScore" + i);
@@ -56,7 +58,7 @@ public class stageselect : MonoBehaviour {
 
 
 
-        if (Input.GetButtonDown("Fire2"))
+        /*if (Input.GetButtonDown("Fire2"))
         {
             for (int i = 1; i <= 5; i++)
             {
@@ -67,7 +69,7 @@ public class stageselect : MonoBehaviour {
             PlayerPrefs.SetInt("ClearStage", 0);
             x = 0;
             Debug.Log("RESET CLER STAGE");
-        }
+        }*/
 	}
 
     public void Stage1()
