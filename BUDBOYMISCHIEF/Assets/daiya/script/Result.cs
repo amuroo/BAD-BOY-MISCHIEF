@@ -40,7 +40,7 @@ public class Result : MonoBehaviour {
         Pop.SetActive(false);
 
         EvaCal();
-        Score.text = GameDirector.score.ToString();
+        Score.text = GameDirector.score.ToString()+"点";
 
         Teacher.text = "× " + sensei.TeacherD.ToString();
         PTTeacher.text = "× " + sensei.PTTeacherD.ToString();
